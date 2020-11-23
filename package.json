@@ -1,0 +1,45 @@
+{
+  "name": "Tandem-Trivia",
+  "version": "1.0.0",
+  "description": "Trivia questions",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.prod.js",
+    "start": "webpack-dev-server --config ./config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Adel Pakrad",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "rellax": "^1.12.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-webpack-template": "^6.2.0",
+    "path": "^0.12.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.1"
+  }
+}
