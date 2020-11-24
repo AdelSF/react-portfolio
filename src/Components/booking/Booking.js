@@ -11,5 +11,4 @@ export default function Booking(){
 
 
 const H1 = styled.h1`
-    color: white;
 `

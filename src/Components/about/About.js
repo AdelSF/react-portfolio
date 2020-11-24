@@ -11,5 +11,4 @@ export default function About(){
 
 
 const H1 = styled.h1`
-    color: white;
 `

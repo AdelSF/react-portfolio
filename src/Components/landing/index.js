@@ -6,8 +6,6 @@ import Third from '../../../assets/img/png-upload/3.png';
 import Fourth from '../../../assets/img/png-upload/4.png';
 import Rellax from "rellax";
 
-// import Header from '../../Components/shared/Header'
-
 
 // the svg icon works fine but my costome svg images not working- i used png
 
@@ -71,9 +69,6 @@ export default function Landing() {
 const Container = styled.div`
     margin: 0;
     z-index: 5;
-    /* height: 100vh; */
-
-    /* position: absolute; */
 `
 
 
@@ -105,4 +100,9 @@ const H1 = styled.h1`
     margin: 5%;
     width: 250px;
     display: flex;
+`
+
+const Span = styled.span`
+    display: flex;
+    font-size: .8rem;
 `
