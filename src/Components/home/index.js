@@ -3,11 +3,6 @@ import styled from 'styled-components'
 import Landing from '../landing'
 import Content from './Content'
 import Art from '../art/Art'
-import Rellax from "rellax";
-
-
-
-
 
 
 
