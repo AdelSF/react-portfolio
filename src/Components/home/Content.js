@@ -18,7 +18,7 @@ export default function Content() {
         <Container>
             <H1>How it works</H1>
             <Div>
-                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls='true'/> 
+                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
             </Div>
             <Parallax bgImage={ relaxImg }>
                 <Div2>

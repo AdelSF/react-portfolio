@@ -1,44 +1,31 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Gallery from 'react-grid-gallery';
-import img from '../../../assets/img/Other/3.png'
+import img from '../../../assets/img/Other/3.png';
+// import ImageGallery from 'react-image-gallery';
+import img1 from '../../../assets/img/react-upload/kaeli-upload/1.jpg';
+import img2 from '../../../assets/img/react-upload/kaeli-upload/2.jpg';
+import img3 from '../../../assets/img/react-upload/kaeli-upload/3.jpg';
+import { Parallax } from "react-parallax";
+import Slider from '../photography/Slider'
 
 
-const IMAGES =
-[{
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
-        isSelected: true,
-        caption: "After Rain (Jeshu John - designerspics.com)"
-},
-{
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
-        caption: "Boats (Jeshu John - designerspics.com)"
-},
 
-{
-        src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-        thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212
-}]
+
+
 
 
 export default function Photography(){
     return (
         <Container>
-            <H1>Hello from Photography 1 section</H1>
-            <Div>
-                <Gallery images={IMAGES}/>
-                {/* document.getElementById('example-0') */}
+            <Slider />
+            {/* <Div>
+                <H1>Hello from Photography 1 section</H1>
             </Div>
-       
+            <Div1>
+                <Parallax bgImage={ img1 }>
+                    <Box>HEllo</Box>
+                </Parallax>
+            </Div1> */}
         </Container>
     )
 }
@@ -49,10 +36,42 @@ const Container = styled.div`
     background-size: contain;
     background-color:  #e6eeff;
 `
+
 const Div = styled.div`
-    width: 100%;
-    height: 100%;
+    display: flex;
+    justify-content: center;
 `
+
+const Div1 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    padding: 3%;
+`
+
 const H1 = styled.h1`
-    margin: 10%;
+    /* display: flex; */
+    margin-top: 10%;
+    /* margin: 10%; */
 `
+
+const Img = styled.img`
+    /* display: flex;
+    position: absolute; */
+    width: 300px;
+    /* width: 200px; */
+`
+
+const Box = styled.div`  // mediaQuery needed
+    width: 100%;
+    height: 800px;
+    margin: 800px;
+    padding: 30px;
+    background-size: contain;
+    background-position: 50% 50%;
+/* display: block; */
+`
+
+//     width: 100%;
+//     height: 100%;
