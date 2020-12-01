@@ -10,6 +10,9 @@ import img3 from '../../../assets/img/react-upload/kaeli-upload/3.jpg';
 import img4 from '../../../assets/img/react-upload/karn-upload/1.jpg';
 import img5 from '../../../assets/img/react-upload/karn-upload/2.jpg';
 import img6 from '../../../assets/img/react-upload/karn-upload/3.jpg';
+import img7 from '../../../assets/img/react-upload/payam-upload/Medium-10-.jpg';
+import img8 from '../../../assets/img/react-upload/rowan-upload/original-1.jpg';
+// import img9 from '../../../assets/img/react-upload/payam-upload/Medium-10-.jpg';
 import Rellax from "rellax";
 
 
@@ -21,7 +24,7 @@ export default function Slider() {
 
     useEffect(() => {
         new Rellax(".img1", { // <---- Via class name
-          speed: -.2,
+          speed: 0,
           center: false,
           wrapper: null,
           round: true,
@@ -30,16 +33,17 @@ export default function Slider() {
         });
 
         new Rellax(".img2", { // <---- Via class name
-            speed: 1,
+            speed: .5,
             center: false,
             wrapper: null,
             round: true,
-            vertical: true,
-            horizontal: false
+            vertical: false,
+            horizontal: true,
+            // percentage: 80
         });
 
         new Rellax(".img3", { // <---- Via class name
-            speed: .2,
+            speed: .8,
             center: false,
             wrapper: null,
             round: true,
@@ -48,7 +52,31 @@ export default function Slider() {
         });
 
         new Rellax(".img4", { // <---- Via class name
-            speed: -.4,
+            speed: 1.1,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+        new Rellax(".img5", { // <---- Via class name
+            speed: 1.5,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+        new Rellax(".img6", { // <---- Via class name
+            speed: 2.2,
+            center: false,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+        new Rellax(".img7", { // <---- Via class name
+            speed: 2.5,
             center: false,
             wrapper: null,
             round: true,
@@ -60,31 +88,34 @@ export default function Slider() {
     return (
         <Container>
             <Div>
-                <Img src={img3} className="img1" alt="layer" />
-                    <H1 className="img4">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
                 
-                <Img src={img2} className="img2" alt="layer" />
-                    <H1 className="img2">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-              
-                <Img src={img1} className="img3" alt="layer" />
-                <Div3>
-                    <H1 className="">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                </Div3>
+                <Img src={img3} className="img1" alt="layer" />
+                    <H1 className="img3">1, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                
+                <Img src={img7} className="img3" alt="layer" />
+                    <H1 className="img7">2, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img3">2/5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                
+                <Img src={img2} className="img2" alt="layer" /> 
+                    <H1 className="img5">3, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img3">3, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+
                 <Img src={img4} className="img3" alt="layer" />
-
-                <Div3>
-                    <H1 className="">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                </Div3>
-                <Img src={img5} className="img1" alt="layer" />
-
-                {/* <Div3>
-                    <H1 className="fourth">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                </Div3>
-                <Img src={img6} className="img3" alt="layer" /> */}
-            </Div>
-          
-            <Div>
-              {/* <Img src={First} className="first" alt="layer" /> */}
+                    <H1 className="img5">4, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img4">4, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                
+                <Img src={img5} className="img4" alt="layer" />
+                    <H1 className="img6">5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                
+                <Img src={img8} className="img5" alt="layer" />
+                    <H1 className="img7">6, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">7, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+              
+                <Img src={img6} className="img5" alt="layer" />
+                    <H1 className="img6">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                {/* //okeye// */}
+              
             </Div>
         </Container>
     )
@@ -133,7 +164,7 @@ const Div3 = styled.div`
 
 const H1 = styled.h1`
     font-size: 1.3rem;
-    color: black;
+    color: purple;
     margin: 10%;
     /* width: 250px; */
     /* display: flex; */
