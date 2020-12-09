@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-// import First from '../../../assets/img/png-upload/1.png';
-// import Second from '../../../assets/img/png-upload/2.png';
-// import Third from '../../../assets/img/png-upload/3.png';
-// import Fourth from '../../../assets/img/png-upload/4.png';
 import img1 from '../../../assets/img/react-upload/kaeli-upload/1.jpg';
 import img2 from '../../../assets/img/react-upload/kaeli-upload/2.jpg';
 import img3 from '../../../assets/img/react-upload/kaeli-upload/3.jpg';
@@ -84,7 +80,8 @@ export default function Slider() {
             horizontal: false
         });
     }, []);
-
+                    // I want to text to be larger on scroll and be adjusted to left and right
+                    // line horizental if it works
     return (
         <Container>
             <Div>
@@ -114,6 +111,7 @@ export default function Slider() {
               
                 <Img src={img6} className="img5" alt="layer" />
                     <H1 className="img6">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
                 {/* //okeye// */}
               
             </Div>
@@ -139,7 +137,9 @@ const Div = styled.div`
 const Img = styled.img`
     display: flex;
     width: 100%;
-    border-top: 2px solid black;
+    /* padding: 1%; */
+    /* border-top: 5px solid pink; */
+    /* border-bottom: 5px solid pink; */
 `
 
 const Div2 = styled.div`
@@ -166,6 +166,8 @@ const H1 = styled.h1`
     font-size: 1.3rem;
     color: purple;
     margin: 10%;
+    /* padding-bottom: 2%; */
+    /* border-bottom: 2px solid gray; */
     /* width: 250px; */
     /* display: flex; */
 `

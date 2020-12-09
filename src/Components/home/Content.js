@@ -27,9 +27,9 @@ export default function Content() {
             </Parallax>
             <Div3>
                 <H2>About The Artist</H2>
-                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
+                {/* <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
                 <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>            
-                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more HERE.</P>    
+                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more HERE.</P>     */}
                 <Parallax bgImage={ me }>
                     <Div4>
                         <Box></Box>
@@ -38,7 +38,7 @@ export default function Content() {
                 <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
                 <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>            
                 <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more HERE.</P>       
-                </Div3>
+            </Div3>
     
         </Container>
     )
@@ -71,10 +71,10 @@ const Div3 = styled.div`
     /* height: 1000px; */
     margin: 10% 20% 0 20%;  // smaller screen I need smaller argin @media query
     border: 1px solid gray;
-    padding: 5%;
+    padding: 2%;
 `
 const Div4 = styled.div`
-    height: 400px;
+    height: 350px;
     /* width: 600px; */
     /* margin: 5% 20%;   // smaller screen I need smaller argin @media query */
     border: 3px solid black;
@@ -106,7 +106,7 @@ const H3 = styled.h1`
 
 const P = styled.p`
     display: block;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 5%;
 `
 
