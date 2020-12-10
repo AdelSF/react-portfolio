@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 
 
 
 export default function Header() {
+    // const [ hamMenu, setHamMenu ] = useState("ham")
+
+
+    // const handleClick = () => {
+    //     if (hamMenu === "ham") {
+    //         setHamMenu("times")
+    //     } else {
+    //         setHamMenu("ham")
+    //     }
+    // }
+
+
     return (
         <Container>
             <Image src="../../assets/transparent-white-logo.png" alt="logo" />
+            {/* <HamMenu onClick={handleClick}>
+                    <Link href='/'><Image src={`./${hamMenu}.png`} /></Link>
+            </HamMenu> */}
             <Items>
                 <Item><Link to='/about' style={{textDecoration: 'none', color: 'rgb(91, 179, 247)'}}>About</Link></Item>
                 <Item><Link to='/booking' style={{textDecoration: 'none', color: 'rgb(91, 179, 247)'}}>Booking</Link></Item>
@@ -57,6 +72,14 @@ const Image = styled.img`
     padding: 20px 40px;
     height: 55px;
     width: 110px;
+    cursor: pointer;
 `
-
+const HamMenu = styled.div`
+    display: none;
+    cursor: pointer;
+    @media only screen and (max-width: 600px) {
+        display: block;
+        z-index: 2;
+    }
+`
 
