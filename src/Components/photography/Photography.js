@@ -18,14 +18,6 @@ export default function Photography(){
     return (
         <Container>
             <Slider />
-            {/* <Div>
-                <H1>Hello from Photography 1 section</H1>
-            </Div>
-            <Div1>
-                <Parallax bgImage={ img1 }>
-                    <Box>HEllo</Box>
-                </Parallax>
-            </Div1> */}
         </Container>
     )
 }

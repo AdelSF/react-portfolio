@@ -33,8 +33,9 @@ export default function Content() {
                     </Div4>
                 </Parallax>
                 <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>            
-                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more HERE.</P>       
+                {/* <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>             */}
+                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end, go to <A href="../booking">BOOKING</A> section and schedule a time for meeting to discuss all the steps to start.</P>
+                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more <A href="../about">HERE</A>.</P>       
             </Div3>
     
         </Container>
@@ -116,7 +117,9 @@ const Box = styled.div`
     width: 100%;
     height: 100%;
 `
-
+const A = styled.a`
+    text-decoration: none;
+`
 
 
 

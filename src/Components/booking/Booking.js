@@ -22,7 +22,7 @@ export default function Booking(){
 
 const Container = styled.div`
     background-image: url(${img});
-    background-size: contain;
+    background-size: cover;
     background-color:  #e6eeff;
     height: 100vh;
     width: 100%;

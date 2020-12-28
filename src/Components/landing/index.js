@@ -60,7 +60,8 @@ export default function Landing() {
               <Img src={First} className="first" alt="layer" />
             </Div>
             <Div2>
-                <H1 className="fourth">THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                <H1 className="fourth">"THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS." <Div3>Thomas Merton</Div3></H1>
+                
             </Div2>
         </Container>
     )
@@ -71,12 +72,10 @@ const Container = styled.div`
     z-index: 5;
 `
 
-
 const Div = styled.div`
     display: flex;
     width: 100%;
 `
-
 
 
 const Img = styled.img`
@@ -93,13 +92,26 @@ const Div2 = styled.div`
     position: absolute;
     margin: 10%;
 `
+const Div3 = styled.div`
+    display: block;
+    color: lightpink;
+    padding-top: 5%;
+    opacity: .8;
+`
 
 const H1 = styled.h1`
     font-size: 1.3rem;
     color: white;
     margin: 5%;
     width: 250px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1.1rem;
+    line-height:1.5rem;
+`
+
+const H2 = styled.h4`
     display: flex;
+    flex-direction: column;
 `
 
 const Span = styled.span`

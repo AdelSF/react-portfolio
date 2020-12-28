@@ -74,12 +74,12 @@ const Image = styled.img`
     width: 110px;
     cursor: pointer;
 `
-const HamMenu = styled.div`
-    display: none;
-    cursor: pointer;
-    @media only screen and (max-width: 600px) {
-        display: block;
-        z-index: 2;
-    }
-`
+// const HamMenu = styled.div`
+//     display: none;
+//     cursor: pointer;
+//     @media only screen and (max-width: 600px) {
+//         display: block;
+//         z-index: 2;
+//     }
+// `
 
