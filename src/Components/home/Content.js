@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 // import { animations } from 'react-animation'
@@ -6,14 +6,27 @@ import img from '../../../assets/img/Other/3.png'
 import relaxImg from '../../../assets/img/Other/Kaeli-1.jpg'
 import { Parallax } from "react-parallax";
 import me from '../../../assets/img/Other/meme.png'
-import lens from '../../../assets/img/Other/Ax3.png'
-// import howItWorks from '../../../assets/video/1min-test.mp4'
-
 
 
 export default function Content() {
-    
+    const [blinkingLens, setBlinkingLens] = useState("none");
 
+ 
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (blinkingLens === "none"){
+                setBlinkingLens("flex")
+            } else {
+                setBlinkingLens("none")
+                console.log("one time")
+            }
+        }
+        , 800); 
+        return () => clearInterval(interval);
+      });
+
+    
     return (
         <Container>
             <H1>How it works</H1>
@@ -22,19 +35,23 @@ export default function Content() {
             </Div>
             <Parallax bgImage={ relaxImg }>
                 <Div2>
-                    <H3>Feel The Present</H3>
+                    <H3>Feel The Moment</H3>
                 </Div2>
             </Parallax>
             <Div3>
                 <H2>About The Artist</H2>
                   <Parallax bgImage={ me }>
                     <Div4>
-                        <Box></Box>
+                        <Box>
+                            {/* <Image1 src={`assets/img/Other/cam1.png`}/> */}
+                            <Image1 style={{display: blinkingLens}} src={`assets/img/Other/cam1.png`}/>
+                            <Image2 src={`assets/img/Other/cam2.png`}/>
+                        </Box>
                     </Div4>
                 </Parallax>
                 <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
                 {/* <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>             */}
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end, go to <A href="../booking">BOOKING</A> section and schedule a time for meeting to discuss all the steps to start.</P>
+                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end, see the <A href="../booking">BOOKING</A> section to schedule a time to start.</P>
                 <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more <A href="../about">HERE</A>.</P>       
             </Div3>
     
@@ -108,18 +125,35 @@ const P = styled.p`
     margin: 5%;
 `
 
+
 const Box = styled.div`
-    background-image: url(${lens});
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: contain;
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     height: 100%;
+    width: 100%;
 `
 const A = styled.a`
     text-decoration: none;
+    color: blue;
 `
+
+const Image1 = styled.img`
+    /* display: {{blinkingLens}}; */
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+`
+const Image2 = styled.img`
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 100%;
+`
+
 
 
 

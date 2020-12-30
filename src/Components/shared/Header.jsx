@@ -1,29 +1,33 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
+// import hamMenu from '../../../assets/icons/hamMenu.png';
+// import times from '../../../assets/icons/times.png';
 
 
 export default function Header() {
-    // const [ hamMenu, setHamMenu ] = useState("ham")
+    const [ hamMenu, setHamMenu ] = useState("ham-icon")
 
 
-    // const handleClick = () => {
-    //     if (hamMenu === "ham") {
-    //         setHamMenu("times")
-    //     } else {
-    //         setHamMenu("ham")
-    //     }
-    // }
+    const handleClick = () => {
+        if (hamMenu === "ham-icon") {
+            setHamMenu("times-icon")
+        } else {
+            setHamMenu("ham-icon")
+        }
+    }
 
+    // first az mobile be desktop
+    // mobile - tablet - desktop
 
     return (
         <Container>
-            <Image src="../../assets/transparent-white-logo.png" alt="logo" />
-            {/* <HamMenu onClick={handleClick}>
-                    <Link href='/'><Image src={`./${hamMenu}.png`} /></Link>
-            </HamMenu> */}
-            <Items>
+            <Logo src="../../assets/transparent-white-logo.png" alt="logo"></Logo>
+            
+            <HamMenu onClick={handleClick}>
+                    <Link href='/'><Image src={`assets/icons/${hamMenu}.png`}/></Link>
+            </HamMenu>
+            <Items menu={ hamMenu }>
                 <Item><Link to='/about' style={{textDecoration: 'none', color: 'rgb(91, 179, 247)'}}>About</Link></Item>
                 <Item><Link to='/booking' style={{textDecoration: 'none', color: 'rgb(91, 179, 247)'}}>Booking</Link></Item>
                 <Item><Link to='/photography' style={{textDecoration: 'none', color: 'rgb(91, 179, 247)'}}>Photography</Link></Item>
@@ -44,7 +48,6 @@ const Container = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #e070d3; */
 `
 
 const Items = styled.ul`
@@ -54,7 +57,9 @@ const Items = styled.ul`
     flex-direction: row;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    /* color: rgb(91, 179, 247) */
+    @media (max-width: 700px) {
+    display: none;
+  }
 `
 const Item = styled.li`
     /* padding: 20px 40px; */
@@ -69,17 +74,28 @@ const Item = styled.li`
 `
 
 const Image = styled.img`
+    padding: 10px 20px;
+    height: 40px;
+    cursor: pointer;
+`
+const HamMenu = styled.div`
+    display: none;
+    cursor: pointer;
+    @media only screen and (max-width: 700px) {
+        display: block;
+        z-index: 2;
+    }
+`
+
+const Logo = styled.img`
     padding: 20px 40px;
     height: 55px;
     width: 110px;
     cursor: pointer;
+    @media only screen and (max-width: 700px) {
+        padding: 10px 20px;
+        height: 35px;
+        width: 60px;
+    }
 `
-// const HamMenu = styled.div`
-//     display: none;
-//     cursor: pointer;
-//     @media only screen and (max-width: 600px) {
-//         display: block;
-//         z-index: 2;
-//     }
-// `
 

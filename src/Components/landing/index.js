@@ -107,6 +107,7 @@ const H1 = styled.h1`
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     font-size: 1.1rem;
     line-height:1.5rem;
+    opacity: .8;
 `
 
 const H2 = styled.h4`
