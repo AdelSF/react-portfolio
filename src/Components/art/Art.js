@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import ReactPlayer from 'react-player';
-import bg from '../../../assets/img/Other/white.jpg';
+import bg from '../../../assets/img/Other/art-pic-7.jpg';
 
 
 
@@ -14,11 +14,11 @@ export default function Art(){
             <Div>
                 <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
             </Div>
-            <H1>More content is coming soon</H1>
-            {/* <H1>San Francisco Mural</H1> */}
-            {/* <Div>
+            {/* <H1>More content is coming soon</H1> */}
+            <H1>San Francisco Mural</H1>
+            <Div>
                 <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
-            </Div> */}
+            </Div>
         </Container>
     )
 }

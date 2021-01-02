@@ -4,6 +4,10 @@ import First from '../../../assets/img/png-upload/1.png';
 import Second from '../../../assets/img/png-upload/2.png';
 import Third from '../../../assets/img/png-upload/3.png';
 import Fourth from '../../../assets/img/png-upload/4.png';
+import FirstSm from '../../../assets/img/png-upload/1-1.png';
+import SecondSm from '../../../assets/img/png-upload/2-2.png';
+import ThirdSm from '../../../assets/img/png-upload/3-3.png';
+import FourthSm from '../../../assets/img/png-upload/4-4.png';
 import Rellax from "rellax";
 
 
@@ -54,11 +58,17 @@ export default function Landing() {
     return (
         <Container>
             <Div>
-              <Img src={Fourth} className="fourth" alt="layer" />
-              <Img src={Third} className="third" alt="layer" />
-              <Img src={Second} className="second" alt="layer" />
-              <Img src={First} className="first" alt="layer" />
+                <Img src={Fourth} className="fourth" alt="layer" />
+                <Img src={Third} className="third" alt="layer" />
+                <Img src={Second} className="second" alt="layer" />
+                <Img src={First} className="first" alt="layer" />
             </Div>
+            <DivSm>
+                <Img src={FourthSm} className="fourth" alt="layer" />
+                <Img src={ThirdSm} className="third" alt="layer" />
+                <Img src={SecondSm} className="second" alt="layer" />
+                <Img src={FirstSm} className="first" alt="layer" />
+            </DivSm>
             <Div2>
                 <H1 className="fourth">"THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS." <Div3>Thomas Merton</Div3></H1>
                 
@@ -75,6 +85,16 @@ const Container = styled.div`
 const Div = styled.div`
     display: flex;
     width: 100%;
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+`
+const DivSm = styled.div`
+    display: none;
+    width: 100%;
+    @media only screen and (max-width: 600px) {
+        display: flex;
+    } 
 `
 
 
@@ -91,6 +111,10 @@ const Div2 = styled.div`
     justify-content: flex-end;
     position: absolute;
     margin: 10%;
+    @media only screen and (max-width: 600px) {
+        margin-top: 25%
+    }
+
 `
 const Div3 = styled.div`
     display: block;
@@ -108,6 +132,14 @@ const H1 = styled.h1`
     font-size: 1.1rem;
     line-height:1.5rem;
     opacity: .8;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.3rem;
+        color: white;
+        /* margin: 5%; */
+        width: 150px;
+        font-size: .8rem;
+        line-height:1.2rem;
+    } 
 `
 
 const H2 = styled.h4`

@@ -51,8 +51,8 @@ export default function Content() {
                 </Parallax>
                 <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
                 {/* <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>             */}
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end, see the <A href="../booking">BOOKING</A> section to schedule a time to start.</P>
-                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn about the team more <A href="../about">HERE</A>.</P>       
+                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end for each session, see the <A href="../booking">BOOKING</A> section to schedule a time to start.</P>
+                <P>As the director of the photography I work with other members of the team, a professional videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn more <A href="../about">ABOUT US</A>.</P>       
             </Div3>
     
         </Container>
@@ -64,6 +64,12 @@ const Container = styled.div`
     background-image: url(${img});
     background-size: contain;
     background-color:  #e6eeff;
+    @media only screen and (max-width: 600px) {
+        margin-top: 135%;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+    }
 `
 
 const Div = styled.div`
@@ -84,9 +90,15 @@ const Div2 = styled.div`
 `
 const Div3 = styled.div`
     /* height: 1000px; */
-    margin: 10% 20% 0 20%;  // smaller screen I need smaller argin @media query
+    margin: 10% 20% 0 20%;  
     border: 1px solid gray;
     padding: 2%;
+    @media only screen and (max-width: 600px) {
+        margin: 5% 5% 0 5%;  
+        border: 1px solid gray;
+        padding: 2%;
+    }
+    
 `
 const Div4 = styled.div`
     height: 350px;
@@ -117,6 +129,10 @@ const H3 = styled.h1`
     font-size: 6rem;
     font-weight: bold;
     opacity: .5;
+    @media only screen and (max-width: 600px) {
+        font-size: 3rem;
+        font-weight: bold;
+    }
 `
 
 const P = styled.p`

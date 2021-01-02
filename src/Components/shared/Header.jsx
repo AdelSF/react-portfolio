@@ -57,21 +57,35 @@ const Items = styled.ul`
     flex-direction: row;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    @media (max-width: 700px) {
-    display: none;
-  }
+    @media only screen and (max-width: 600px) {
+        z-index: 1;
+        display: ${({menu}) => menu === 'ham-icon' ? 'none' : 'flex'};
+        flex-direction: ${({menu}) => menu === 'ham-icon' ? '' : 'column-reverse'};
+        position: absolute;
+        /* background-color: lightgray; */
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        align-items: start;
+        padding-top: 150px;
+    }
 `
+
 const Item = styled.li`
-    /* padding: 20px 40px; */
+    padding: 18px 0px;
     list-style-type: none;
     font-size: .8rem;
     text-transform: uppercase;
     font-weight: 800;
-    margin-left: 25px;
+    cursor: pointer;
     :last-child {
-        margin-left: 0;
+     margin-left: 0;
+     }
+    @media only screen and (max-width: 600px) {
+        width: 100%;
     }
-`
+    `
 
 const Image = styled.img`
     padding: 10px 20px;
@@ -81,7 +95,7 @@ const Image = styled.img`
 const HamMenu = styled.div`
     display: none;
     cursor: pointer;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 600px) {
         display: block;
         z-index: 2;
     }
@@ -92,10 +106,10 @@ const Logo = styled.img`
     height: 55px;
     width: 110px;
     cursor: pointer;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 600px) {
         padding: 10px 20px;
         height: 35px;
-        width: 60px;
+        width: 70px;
     }
 `
 
