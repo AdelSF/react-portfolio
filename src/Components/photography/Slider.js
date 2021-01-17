@@ -88,31 +88,31 @@ export default function Slider() {
             <Div>
                 
                 <Img src={img3} className="img1" alt="layer" />
-                    <H1 className="img3">1, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img3">“Taking an image, freezing a moment, reveals how rich reality truly is.”<Div1>Anonymous</Div1></H1>
                 
                 <Img src={img7} className="img3" alt="layer" />
-                    <H1 className="img7">2, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img3">2/5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H2 className="img7">“There is one thing the photograph must contain, the humanity of the moment.”<Div1>Robert Frank</Div1> </H2>
+                    <H3 className="img3">“To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.”<Div1>Elliott Erwitt</Div1></H3>
                 
                 <Img src={img2} className="img2" alt="layer" /> 
-                    <H1 className="img5">3, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img3">3, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H4 className="img5">“I don’t trust words. I trust pictures.”<Div1>Gilles Peress</Div1></H4>
+                    <H1 className="img3">“There are always two people in every picture: the photographer and the viewer.”<Div1>Ansel Adams</Div1></H1>
 
                 <Img src={img4} className="img3" alt="layer" />
-                    <H1 className="img5">4, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img4">4, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H5 className="img5">“The whole point of taking pictures is so that you don’t have to explain things with words.”<Div1>Elliott Erwitt</Div1></H5>
+                    <H1 className="img4">7, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
                 
                 <Img src={img5} className="img4" alt="layer" />
-                    <H1 className="img6">5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img5">5, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img6">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">9, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
                 
                 <Img src={img8} className="img5" alt="layer" />
-                    <H1 className="img7">6, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img5">7, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img7">10, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">11, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
               
                 <Img src={img6} className="img5" alt="layer" />
-                    <H1 className="img6">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
-                    <H1 className="img5">8, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img6">12, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
+                    <H1 className="img5">13, THE PHOTOGRAPHER IS ONLY A WITNESS. <br></br>Thomas Merton</H1>
                 {/* //okeye// */}
               
             </Div>
@@ -132,15 +132,18 @@ const Div = styled.div`
     justify-content: center;
     width: 100%;
 `
-
-
+const Div1 = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    color: pink;
+    margin-top:2%;
+`
 
 const Img = styled.img`
     display: flex;
     width: 100%;
-    /* padding: 1%; */
-    /* border-top: 5px solid pink; */
-    /* border-bottom: 5px solid pink; */
 `
 
 const Div2 = styled.div`
@@ -165,12 +168,33 @@ const Div3 = styled.div`
 
 const H1 = styled.h1`
     font-size: 1.3rem;
-    color: purple;
+    color: black;
     margin: 10%;
-    /* padding-bottom: 2%; */
-    /* border-bottom: 2px solid gray; */
-    /* width: 250px; */
-    /* display: flex; */
+`
+const H2 = styled.h1`
+    font-size: 1.3rem;
+    color: white;
+    margin: 10%;
+`
+const H3 = styled.h1`
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: purple;
+    margin: 5%;
+    width: 40%;
+`
+const H4 = styled.h1`
+    font-size: 1.5rem;
+    line-height: 150%;
+    margin: 10%;
+    width: 30%;
+    float: right;
+    color: black;
+`
+const H5 = styled.h1`
+    font-size: 1.6rem;
+    color: black;
+    margin: 10%;
 `
 
 const Span = styled.span`
