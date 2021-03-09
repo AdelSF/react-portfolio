@@ -7,7 +7,7 @@ import img4 from '../../../assets/img/react-upload/karn-upload/1.jpg';
 import img5 from '../../../assets/img/react-upload/karn-upload/2.jpg';
 import img6 from '../../../assets/img/react-upload/karn-upload/3.jpg';
 import img7 from '../../../assets/img/react-upload/payam-upload/Medium-10-.jpg';
-import img8 from '../../../assets/img/react-upload/rowan-upload/original-1.jpg';
+import img8 from '../../../assets/img/react-upload/rowan-upload/Original-1.jpg';
 // import img9 from '../../../assets/img/react-upload/payam-upload/Medium-10-.jpg';
 import Rellax from "rellax";
 
