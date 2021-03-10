@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import hamMenu from '../../../assets/icons/hamMenu.png';
-// import times from '../../../assets/icons/times.png';
+import logo from "../../../assets/img/Other/transparent-white-logo.png"
+
 
 
 export default function Header() {
@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <Container>
-            <Logo src="../../assets/transparent-white-logo.png" alt="logo"></Logo>
+            <Logo src={ logo } alt="logo"></Logo>
             
             <HamMenu onClick={handleClick}>
                     <Link href='/'><Image src={`assets/icons/${hamMenu}.png`}/></Link>
