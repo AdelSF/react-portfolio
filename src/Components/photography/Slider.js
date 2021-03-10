@@ -14,7 +14,7 @@ import Rellax from "rellax";
 
 // the svg icon works fine but my costome svg images not working- i used png
 // performance issue... no strategy for file efficiency 
-
+// first commit in new branch test
 
 
 export default function Slider() {
