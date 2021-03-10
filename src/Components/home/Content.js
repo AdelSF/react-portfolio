@@ -6,6 +6,9 @@ import img from '../../../assets/img/Other/3.png'
 import relaxImg from '../../../assets/img/Other/Kaeli-1.jpg'
 import { Parallax } from "react-parallax";
 import me from '../../../assets/img/Other/meme.png'
+import cam1 from '../../../assets/img/Other/cam1.png';
+import cam2 from '../../../assets/img/Other/cam2.png'
+
 
 
 export default function Content() {
@@ -31,7 +34,7 @@ export default function Content() {
         <Container>
             <H1>How it works</H1>
             <Div>
-                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
+                <ReactPlayer url='https://www.youtube.com/watch?v=78mUgHDRTag' controls={true}/> 
             </Div>
             <Parallax bgImage={ relaxImg }>
                 <Div2>
@@ -44,8 +47,8 @@ export default function Content() {
                     <Div4>
                         <Box>
                             {/* <Image1 src={`assets/img/Other/cam1.png`}/> */}
-                            <Image1 style={{display: blinkingLens}} src={`assets/img/Other/cam1.png`}/>
-                            <Image2 src={`assets/img/Other/cam2.png`}/>
+                            <Image1 style={{display: blinkingLens}} src={ cam1 }/>
+                            <Image2 src={ cam2 }/>
                         </Box>
                     </Div4>
                 </Parallax>
