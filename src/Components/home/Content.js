@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
-// import { animations } from 'react-animation'
 import img from '../../../assets/img/Other/3.png'
 import relaxImg from '../../../assets/img/Other/Kaeli-1.jpg'
 import { Parallax } from "react-parallax";
@@ -46,14 +45,12 @@ export default function Content() {
                   <Parallax bgImage={ me }>
                     <Div4>
                         <Box>
-                            {/* <Image1 src={`assets/img/Other/cam1.png`}/> */}
                             <Image1 style={{display: blinkingLens}} src={ cam1 }/>
                             <Image2 src={ cam2 }/>
                         </Box>
                     </Div4>
                 </Parallax>
                 <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
-                {/* <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps that help you get the best results in a short amount of time, you will find more information HERE.</P>             */}
                 <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end for each session, see the <A href="../booking">BOOKING</A> section to schedule a time to start.</P>
                 <P>As the director of the photography team, I work with other team members, a videograher, makeup artist, photo editor and light assistant are working with us during the photography session. Learn more about the team in <A href="../about">ABOUT US</A>.</P>       
             </Div3>
@@ -100,14 +97,16 @@ const Div3 = styled.div`
         margin: 5% 5% 0 5%;  
         border: 1px solid gray;
         padding: 2%;
-    }
-    
+    }  
 `
 const Div4 = styled.div`
     height: 350px;
     /* width: 600px; */
     /* margin: 5% 20%;   // smaller screen I need smaller argin @media query */
     border: 3px solid black;
+    @media only screen and (min-width: 1500px) {
+        height: 500px;
+    }  
 `
 
 const H1 = styled.h1`
@@ -144,7 +143,6 @@ const P = styled.p`
     margin: 5%;
 `
 
-
 const Box = styled.div`
     display: flex;
     justify-content: center;
@@ -173,17 +171,3 @@ const Image2 = styled.img`
     height: 100%;
 `
 
-
-
-
-// const Button = styled.button`
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border: 2px solid black;
-//     font-size: 1.1rem;
-//     border-radius: 5px;
-//     height: 40px;
-//     width: 200px;
-//     margin: 2%;
-// `

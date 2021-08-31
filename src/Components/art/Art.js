@@ -12,13 +12,13 @@ export default function Art(){
         <Container>
             <H1>Drawing With Pencil</H1>
             <Div>
-                <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
+                <ReactPlayer url='https://www.youtube.com/watch?v=cj5LdK3s5-Q' controls={true}/> 
             </Div>
             {/* <H1>More content is coming soon</H1> */}
-            <H1>San Francisco Mural</H1>
+            {/* <H1>San Francisco Mural</H1>
             <Div>
                 <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' controls={true}/> 
-            </Div>
+            </Div> */}
         </Container>
     )
 }
