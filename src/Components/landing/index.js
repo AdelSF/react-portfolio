@@ -79,20 +79,21 @@ export default function Landing() {
 
 const Container = styled.div`
     margin: 0;
-    z-index: 5;
+    display: flex;
+    /* z-index: 5; */
 `
 
 const Div = styled.div`
     display: flex;
     width: 100%;
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
         display: none;
     }
 `
 const DivSm = styled.div`
     display: none;
     width: 100%;
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
         display: flex;
     } 
 `

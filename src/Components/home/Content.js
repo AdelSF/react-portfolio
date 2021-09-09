@@ -14,7 +14,6 @@ export default function Content() {
     const [blinkingLens, setBlinkingLens] = useState("none");
 
  
-
     useEffect(() => {
         const interval = setInterval(() => {
             if (blinkingLens === "none"){
@@ -93,7 +92,7 @@ const Div3 = styled.div`
     margin: 10% 20% 0 20%;  
     border: 1px solid gray;
     padding: 2%;
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
         margin: 5% 5% 0 5%;  
         border: 1px solid gray;
         padding: 2%;
@@ -104,7 +103,7 @@ const Div4 = styled.div`
     /* width: 600px; */
     /* margin: 5% 20%;   // smaller screen I need smaller argin @media query */
     border: 3px solid black;
-    @media only screen and (min-width: 1500px) {
+    @media (min-width: 1500px) {
         height: 500px;
     }  
 `
@@ -112,7 +111,7 @@ const Div4 = styled.div`
 const H1 = styled.h1`
     display: flex;
     justify-content: center;
-    margin: 1%;
+    /* margin: 1%; */
     padding-top: 8%;
     width: 100%;
 `
