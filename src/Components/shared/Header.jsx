@@ -30,8 +30,8 @@ export default function Header() {
                 <Logo src={logo} alt="logo" />
                     <Items displayStatus={hamContent} >
                         <Item to='/' >HOME</Item>
-                        <Item to='/art' >ART</Item>
-                        <Item to='/photography' >PHOTOGRAPHY</Item>
+                        <Item to='/shop' >SHOP</Item>
+                        <Item to='/gallery' >GALLERY</Item>
                         <Item to='/booking' >BOOKING</Item>
                         <Item to='/about' >ABOUT</Item>
                     </Items>

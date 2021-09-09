@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
-
-
-
 const images = [
     '../../../assets/img/react-upload/kaeli-upload/1.jpg',
     '../../../assets/img/react-upload/kaeli-upload/2.jpg',
@@ -16,7 +13,7 @@ const images = [
     '../../../assets/img/react-upload/rowan-upload/Original-1.jpg'
 ]
 
-export default function Photography(){
+export default function Gallery(){
     return (
         <Container>
             <p>photography</p>
