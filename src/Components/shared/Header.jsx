@@ -18,14 +18,10 @@ export default function Header() {
         }
     }
 
-    useEffect(() => {
-        // document.title = ""
-    })
-
     menuColor = path => location.pathname === path ? 'white' : '#5bb3f7'
 
     return (
-        <Container>
+        <>
             <Menu>
                 <Logo src={logo} alt="logo" />
                     <Items displayStatus={hamContent} >
@@ -37,27 +33,28 @@ export default function Header() {
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
-        </Container>
+        </>
     )
 }
 
 
 
-const Container = styled.header`
-    /* background-color: #b1b36d; */
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 50px;
-    /* display: block; */
-`
+// const Container = styled.header`
+//     background-color: black;
+// `
+
 const Menu = styled.header`
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid gray;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* z-index: 2; */
+    /* background: linear-gradient(0deg, rgba(0,0,0,0.3071603641456583) 0%, rgba(0,0,0,1) 100%); */
 `
 
 const Logo = styled.img`
-    height: 55px;
+    height: 40px;
     margin-left: 1.5rem;
 `
 

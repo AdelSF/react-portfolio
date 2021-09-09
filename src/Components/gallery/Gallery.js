@@ -15,19 +15,29 @@ const images = [
 
 export default function Gallery(){
     return (
-        <Container>
-            <p>photography</p>
-            <p>photography</p>
-            <p>photography</p>
-            <p>photography</p>
-            <p>photography</p>
-        </Container>
+        <>
+          
+            <P>hi</P>
+            <P><I></I></P>
+        </>
     )
 }
 
-
 const Container = styled.div`
-position: absolute;
-    margin: 0;
-    padding: 0;
+    /* height: 100vh;
+    width: 100vw;
+    background-color: black; */
+`
+const P = styled.p`
+    color: white;
+`
+const I = styled.i`
+    margin: 40px;
+    color: white;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 5px;
 `

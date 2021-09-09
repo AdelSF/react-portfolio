@@ -1,8 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import styled from 'styled-components'
-import Landing from '../landing'
+import Paralax from './Paralax'
 import Content from './Content'
-import Art from '../art/Shop'
 
 
 
@@ -10,8 +9,9 @@ export default function Home() {
 
     return (
         <>
-            <Landing />
+            <Paralax />
             <Content />
+            {/* <p>Hi</p> */}
         </>
     )
 }

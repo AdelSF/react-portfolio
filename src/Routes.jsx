@@ -1,8 +1,8 @@
 import React from "react"
 import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Home from './Components/home'
-import Shop from './Components/art/Shop'
+import Home from './Components/home/Home'
+import Shop from './Components/shop/Shop'
 import Gallery from './Components/gallery/Gallery'
 import Booking from './Components/booking/Booking'
 import About from './Components/about/About'
@@ -16,9 +16,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: Helvetica, Arial, sans-serif;
   }
   
-  body, h1, ul {
+  body {
     margin: 0;
     padding: 0;
+    background-color: black;
   }
 `
 
