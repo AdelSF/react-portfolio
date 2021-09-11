@@ -1,9 +1,9 @@
 import React from "react"
 import { createGlobalStyle } from 'styled-components'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Home from './Components/home'
-import Art from './Components/art/Art'
-import Photography from './Components/photography/Photography'
+import Home from './Components/home/Home'
+import Shop from './Components/shop/Shop'
+import Gallery from './Components/gallery/Gallery'
 import Booking from './Components/booking/Booking'
 import About from './Components/about/About'
 import Header from './Components/shared/Header.jsx'
@@ -16,9 +16,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: Helvetica, Arial, sans-serif;
   }
   
-  body, h1, ul {
+  body {
     margin: 0;
     padding: 0;
+    background-color: black;
   }
 `
 
@@ -30,8 +31,8 @@ const Routes = () => {
         <BrowserRouter>
             <Header />
             <Switch>
-              <Route path="/art"><Art /></Route>
-              <Route path="/photography"><Photography /></Route>
+              <Route path="/shop"><Shop /></Route>
+              <Route path="/gallery"><Gallery /></Route>
               <Route path="/booking"><Booking /></Route>
               <Route path="/about"><About/></Route>
               <Route path="/"><Home /></Route>

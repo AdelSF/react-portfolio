@@ -19,7 +19,7 @@ export default function Landing() {
 
     useEffect(() => {
         new Rellax(".fourth", { // <---- Via class name
-          speed: -2,
+          speed: -5,
           center: false,
           wrapper: null,
           round: true,
@@ -28,7 +28,7 @@ export default function Landing() {
         });
 
         new Rellax(".third", { // <---- Via class name
-            speed: -.9,
+            speed: -3,
             center: false,
             wrapper: null,
             round: true,
@@ -37,7 +37,7 @@ export default function Landing() {
         });
 
         new Rellax(".second", { // <---- Via class name
-            speed: 0,
+            speed: -1.5,
             center: false,
             wrapper: null,
             round: true,
@@ -46,7 +46,7 @@ export default function Landing() {
         });
 
         new Rellax(".first", { // <---- Via class name
-            speed: 1,
+            speed: 0,
             center: false,
             wrapper: null,
             round: true,
@@ -70,8 +70,9 @@ export default function Landing() {
                 <Img src={FirstSm} className="first" alt="layer" />
             </DivSm>
             <Div2>
-                <H1 className="fourth">"THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS." <Div3>Thomas Merton</Div3></H1>
-                
+                <H1 className="fourth">"THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS." <Div3>Thomas Merton</Div3>
+                    <Div4><P><I></I><I></I><I></I></P></Div4>
+                </H1>
             </Div2>
         </Container>
     )
@@ -79,20 +80,24 @@ export default function Landing() {
 
 const Container = styled.div`
     margin: 0;
-    z-index: 5;
+    /* display: flex; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* position: relative ; */
+    /* z-index: 1; */
 `
 
 const Div = styled.div`
     display: flex;
     width: 100%;
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
         display: none;
     }
 `
 const DivSm = styled.div`
     display: none;
     width: 100%;
-    @media only screen and (max-width: 600px) {
+    @media (max-width: 600px) {
         display: flex;
     } 
 `
@@ -114,13 +119,33 @@ const Div2 = styled.div`
     @media only screen and (max-width: 600px) {
         margin-top: 25%
     }
-
 `
 const Div3 = styled.div`
     display: block;
     color: lightpink;
     padding-top: 5%;
     opacity: .8;
+`
+const Div4 = styled.div`
+    margin: 0 auto;
+    width: 18px;
+    color: lightpink;
+    opacity: .4;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `
 
 const H1 = styled.h1`
@@ -150,4 +175,18 @@ const H2 = styled.h4`
 const Span = styled.span`
     display: flex;
     font-size: .8rem;
+`
+const P = styled.p`
+    color: white;
+    display: flex;
+    flex-direction: column;
+`
+const I = styled.i`
+    margin: 2px;
+    color: white;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    padding: 5px;
 `
