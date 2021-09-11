@@ -19,7 +19,7 @@ export default function Landing() {
 
     useEffect(() => {
         new Rellax(".fourth", { // <---- Via class name
-          speed: -3,
+          speed: -5,
           center: false,
           wrapper: null,
           round: true,
@@ -28,7 +28,7 @@ export default function Landing() {
         });
 
         new Rellax(".third", { // <---- Via class name
-            speed: -2,
+            speed: -3,
             center: false,
             wrapper: null,
             round: true,
@@ -37,7 +37,7 @@ export default function Landing() {
         });
 
         new Rellax(".second", { // <---- Via class name
-            speed: -1,
+            speed: -1.5,
             center: false,
             wrapper: null,
             round: true,
@@ -80,8 +80,11 @@ export default function Landing() {
 
 const Container = styled.div`
     margin: 0;
-    display: flex;
-    /* z-index: 5; */
+    /* display: flex; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* position: relative ; */
+    /* z-index: 1; */
 `
 
 const Div = styled.div`

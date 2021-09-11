@@ -40,13 +40,13 @@ export default function Header() {
 
 
 // const Container = styled.header`
-//     background-color: black;
 // `
 
 const Menu = styled.header`
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
+    /* background-color: black; */
     /* position: fixed; */
     /* width: 100%; */
     /* z-index: 2; */

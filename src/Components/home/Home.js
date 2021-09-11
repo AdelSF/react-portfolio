@@ -9,13 +9,15 @@ export default function Home() {
 
     return (
         <>
-            <Paralax />
+            <Div>
+                <Paralax />
+            </Div>
             <Content />
-            {/* <p>Hi</p> */}
         </>
     )
 }
 
 const Div = styled.div`
-    
+    height: 110vh;
+    width: 100%;
 `

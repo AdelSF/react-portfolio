@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
+
 const images = [
     '../../../assets/img/react-upload/kaeli-upload/1.jpg',
     '../../../assets/img/react-upload/kaeli-upload/2.jpg',
@@ -16,17 +17,13 @@ const images = [
 export default function Gallery(){
     return (
         <>
-          
-            <P>hi</P>
-            <P><I></I></P>
+            <P>Test</P>
         </>
-    )
+    );
 }
 
 const Container = styled.div`
-    /* height: 100vh;
-    width: 100vw;
-    background-color: black; */
+   
 `
 const P = styled.p`
     color: white;

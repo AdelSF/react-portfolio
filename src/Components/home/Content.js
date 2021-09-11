@@ -59,16 +59,17 @@ export default function Content() {
 }
 
 const Container = styled.div`
-    margin-top: 60%;
+    /* margin-top: 60%; */
     background-image: url(${img});
     background-size: contain;
     background-color:  #e6eeff;
-    position: absolute;
+    position: relative;
+    z-index: 2;
     @media only screen and (max-width: 600px) {
-        margin-top: 135%;
+        /* margin-top: 135%; */
         position: absolute;
-        width: 100%;
-        z-index: 10;
+        /* width: 100%; */
+        /* z-index: 10; */
     }
 `
 
