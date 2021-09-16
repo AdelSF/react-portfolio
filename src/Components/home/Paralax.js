@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import First from '../../../assets/img/png-upload/1.png';
-import Second from '../../../assets/img/png-upload/2.png';
-import Third from '../../../assets/img/png-upload/3.png';
-import Fourth from '../../../assets/img/png-upload/4.png';
-import FirstSm from '../../../assets/img/png-upload/1-1.png';
-import SecondSm from '../../../assets/img/png-upload/2-2.png';
-import ThirdSm from '../../../assets/img/png-upload/3-3.png';
-import FourthSm from '../../../assets/img/png-upload/4-4.png';
+import First from '../../../assets/img/parallax-imgs/svg/1.svg';
+import Second from '../../../assets/img/parallax-imgs/svg/2.svg';
+import Third from '../../../assets/img/parallax-imgs/svg/3.svg';
+import Fourth from '../../../assets/img/parallax-imgs/svg/4.svg';
+import FirstSm from '../../../assets/img/parallax-imgs/svg/1-1.svg';
+import SecondSm from '../../../assets/img/parallax-imgs/svg/2-2.svg';
+import ThirdSm from '../../../assets/img/parallax-imgs/svg/3-3.svg';
+import FourthSm from '../../../assets/img/parallax-imgs/svg/4-4.svg';
 import Rellax from "rellax";
-
-
-// the svg icon works fine but my costome svg images not working- i used png
-
 
 
 export default function Landing() {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
-import img from '../../../assets/img/Other/3.png'
+import img from '../../../assets/img/Other/background-design.png'
 import relaxImg from '../../../assets/img/Other/Kaeli-1.jpg'
 import { Parallax } from "react-parallax";
 import me from '../../../assets/img/Other/meme.png'

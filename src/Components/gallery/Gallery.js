@@ -1,40 +1,58 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
+import LinkJson from '../../../assets/json/imgLinks.json';
+import Vector from '../../../assets/img/Other/vector-1.png'
 
-
-
-const images = [
-    '../../../assets/img/react-upload/kaeli-upload/1.jpg',
-    '../../../assets/img/react-upload/kaeli-upload/2.jpg',
-    '../../../assets/img/react-upload/kaeli-upload/3.jpg',
-    '../../../assets/img/react-upload/karn-upload/1.jpg',
-    '../../../assets/img/react-upload/karn-upload/2.jpg',
-    '../../../assets/img/react-upload/karn-upload/3.jpg',
-    '../../../assets/img/react-upload/payam-upload/Medium-10-.jpg',
-    '../../../assets/img/react-upload/rowan-upload/Original-1.jpg'
-]
 
 export default function Gallery(){
     return (
         <>
-            <P>Test</P>
+            <Container>
+              <Div2>
+                <H2>Photo Gallery</H2>
+                {/* <img src={Vector} /> */}
+              </Div2>
+              <ImgGalleryBox>
+                {LinkJson.map((images, i) => {
+                  return( <Div>
+                              {/* <H2>Session Number: {i+1}</H2> */}
+                              <ImageGallery items={images} autoPlay={true} slideDuration={1500} swipingTransitionDuration={0} />
+                          </Div>
+                )})}
+              </ImgGalleryBox>
+            </Container>
         </>
     );
 }
 
 const Container = styled.div`
-   
+  margin-top: 5%;
+  justify-content: center;
+  border-radius: 5px;
 `
-const P = styled.p`
-    color: white;
+const Div = styled.div`
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 2%;
 `
-const I = styled.i`
-    margin: 40px;
-    color: white;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    border: solid white;
-    border-width: 0 5px 5px 0;
-    display: inline-block;
-    padding: 5px;
+const Div2 = styled.div`
+  display: flex;
+  justify-content: center;
+  border: 2px solid gray;
+  width: 30%;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1%;
+`
+const H2 = styled.h2`
+  display: flex;
+  color: white;
+  justify-content: center;
+`
+const ImgGalleryBox = styled.div`
+  margin: 2%;
+  padding: 2%;
 `
