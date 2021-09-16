@@ -18,7 +18,7 @@ export default function Gallery(){
                 {LinkJson.map((images, i) => {
                   return( <Div>
                               {/* <H2>Session Number: {i+1}</H2> */}
-                              <ImageGallery items={images} autoPlay={true} slideDuration={1500} swipingTransitionDuration={0} />
+                              <ImageGallery items={images} autoPlay={true} slideDuration={1500} />
                           </Div>
                 )})}
               </ImgGalleryBox>
