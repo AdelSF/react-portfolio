@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { InlineWidget } from "react-calendly";
-import img from '../../../assets/img/Other/3.png';
+import img from '../../../assets/img/Other/background-design.png';
 
 
 
