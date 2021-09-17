@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import LinkJson from '../../../assets/json/imgLinks.json';
-import Vector from '../../../assets/img/Other/vector-1.png'
+// import Vector from '../../../assets/img/Other/vector-1.png'
 
 
 export default function Gallery(){
