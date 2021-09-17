@@ -18,7 +18,7 @@ export default function Gallery(){
                 {LinkJson.map((images, i) => {
                   return( <Div>
                               {/* <H2>Session Number: {i+1}</H2> */}
-                              <ImageGallery items={images} autoPlay={true} slideDuration={1500} />
+                              <ImageGallery items={images} autoPlay={true} slideDuration={1500} key={i} thumbnailPosition={"left"} showBullets={true}/>
                           </Div>
                 )})}
               </ImgGalleryBox>
@@ -35,8 +35,9 @@ const Container = styled.div`
 const Div = styled.div`
   border: 2px solid lightblue;
   border-radius: 5px;
-  margin-top: 2%;
-  padding: 2%;
+  margin: 30px auto;
+  padding: 1%;
+  width: 80%;
 `
 const Div2 = styled.div`
   display: flex;
