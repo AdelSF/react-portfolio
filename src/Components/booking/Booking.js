@@ -23,15 +23,18 @@ export default function Booking(){
 const Container = styled.div`
     background-image: url(${img});
     background-size: cover;
-    background-color:  #e6eeff;
+    background-color: #e6eeff;
     height: 100vh;
     width: 100%;
+    @media only screen and (max-width: 600px) {
+        height: 100%;
+    }
 `
 
 
 const Div = styled.div`
     padding-top: 5%;
-    @media only screen and (max-width: 600px) {
-        padding-top: 30%;
-    }
+    /* @media only screen and (max-width: 600px) {
+        padding-top: 15%;
+    } */
 `
