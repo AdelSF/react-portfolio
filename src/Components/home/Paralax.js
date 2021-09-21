@@ -94,7 +94,7 @@ const DivSm = styled.div`
     display: none;
     width: 100%;
     @media (max-width: 600px) {
-        display: flex;
+        display: none;
     } 
 `
 
@@ -154,6 +154,7 @@ const H1 = styled.h1`
     line-height:1.5rem;
     opacity: .8;
     @media only screen and (max-width: 600px) {
+        display: none;
         font-size: 1.3rem;
         color: white;
         /* margin: 5%; */

@@ -26,10 +26,10 @@ export default function Header() {
                 <Logo src={logo} alt="logo" />
                     <Items displayStatus={hamContent} >
                         <Item to='/' >HOME</Item>
-                        <Item to='/shop' >SHOP</Item>
+                        {/* <Item to='/shop' >SHOP</Item> */}
                         <Item to='/gallery' >GALLERY</Item>
                         <Item to='/booking' >BOOKING</Item>
-                        <Item to='/about' >ABOUT</Item>
+                        {/* <Item to='/about' >ABOUT</Item> */}
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
@@ -38,24 +38,19 @@ export default function Header() {
 }
 
 
-
-// const Container = styled.header`
-// `
-
 const Menu = styled.header`
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
-    /* background-color: black; */
-    /* position: fixed; */
-    /* width: 100%; */
-    /* z-index: 2; */
-    /* background: linear-gradient(0deg, rgba(0,0,0,0.3071603641456583) 0%, rgba(0,0,0,1) 100%); */
+    background-color: black;
 `
 
 const Logo = styled.img`
     height: 40px;
     margin-left: 1.5rem;
+    @media only screen and (max-width: 600px) {
+    margin: 3%;
+  }
 `
 
 const Items = styled.nav`
@@ -82,6 +77,9 @@ const Item = styled(Link)`
         color: lightgray;
         transition: .7s;
     }
+    @media only screen and (max-width: 600px) {
+    margin-bottom: 50%;
+  }
 `
 
 const Ham = styled.span`
