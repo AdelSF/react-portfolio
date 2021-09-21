@@ -34,7 +34,7 @@ const Container = styled.div`
 
 const Div = styled.div`
     padding-top: 5%;
-    /* @media only screen and (max-width: 600px) {
-        padding-top: 15%;
-    } */
+    @media only screen and (max-width: 600px) {
+        padding-top: 0;
+    }
 `
