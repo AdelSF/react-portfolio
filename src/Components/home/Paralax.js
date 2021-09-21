@@ -92,9 +92,9 @@ const Div = styled.div`
 `
 const DivSm = styled.div`
     display: none;
-    width: 100%;
     @media (max-width: 600px) {
-        display: none;
+        width: 100%;
+        display: flex;
     } 
 `
 
