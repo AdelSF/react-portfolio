@@ -17,9 +17,9 @@ export default function Gallery(){
               </HeaderOfPage>
               <ImgGalleryBox>
                 {LinkJson.map((images, i) => {
-                  return( <Div>
+                  return( <Div key={i}>
                               {/* <H2>Session Number: {i+1}</H2> */}
-                              <ImageGallery items={images} autoPlay={true} lazyLoad={true} slideDuration={1500} key={i} slideInterval={5000} thumbnailPosition={"left"} showBullets={true}/>
+                              <ImageGallery items={images} autoPlay={false} lazyLoad={true} slideDuration={1500} slideInterval={5000} thumbnailPosition={"left"} showBullets={true}/>
                           </Div>
                 )})}
               </ImgGalleryBox>
@@ -33,7 +33,7 @@ const Container = styled.div`
     border-radius: 5px;
     background-image: url(${img});
     background-size: contain;
-    background-color:  #e6eeff;
+    background-color:  #e6e6ff;
 `
 const Div = styled.div`
   border: 2px solid lightblue;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { InlineWidget } from "react-calendly";
-import img from '../../../assets/img/Other/background-design.png';
+import img from '../../../assets/img/Other/background-design.png'
 
 
 
@@ -23,7 +23,7 @@ export default function Booking(){
 const Container = styled.div`
     background-image: url(${img});
     background-size: cover;
-    background-color: #e6eeff;
+    background-color: #e6ffff;
     height: 100vh;
     width: 100%;
     @media only screen and (max-width: 600px) {

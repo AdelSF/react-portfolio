@@ -25,11 +25,11 @@ export default function Header() {
             <Menu>
                 <Logo src={logo} alt="logo" />
                     <Items displayStatus={hamContent} >
-                        <Item to='/' >HOME</Item>
+                        <Item onClick={hamOnClick} to='/' >HOME</Item>
                         {/* <Item to='/shop' >SHOP</Item> */}
-                        <Item to='/gallery' >GALLERY</Item>
-                        <Item to='/booking' >BOOKING</Item>
-                        {/* <Item to='/about' >ABOUT</Item> */}
+                        <Item onClick={hamOnClick} to='/gallery' >GALLERY</Item>
+                        <Item onClick={hamOnClick} to='/booking' >BOOKING</Item>
+                        <Item onClick={hamOnClick} to='/about' >ABOUT</Item>
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
@@ -62,7 +62,7 @@ const Items = styled.nav`
     @media (max-width: 600px) {
         display: ${({displayStatus}) => displayStatus === '╳' ? 'flex' : 'none' };
         flex-direction: column;
-        height: 40vh;
+        height: 30vh;
         margin-top: 10vh;
         width: unset;
     }

@@ -13,11 +13,12 @@ import Rellax from "rellax";
 
 export default function Landing() {
 
-    const [scrolling, setScrolling] = useState("Flex")
+//     const [scrolling, setScrolling] = useState("Flex")
 
-   useEffect(() => {
-    console.log(window.pageYOffset)
-   })
+//    useEffect(() => {
+//     console.log(window.pageYOffset)
+//     console.log("hi")
+//    })
 
     useEffect(() => {
         new Rellax(".fourth", { // <---- Via class name
@@ -73,7 +74,7 @@ export default function Landing() {
             </SvgBoxSmlScreen>
             <TextBox>
                 <Qoute className="fourth">"THE EARTH IS ART, THE PHOTOGRAPHER IS ONLY A WITNESS." <NameBox>Thomas Merton</NameBox>
-                    <ArrowBox onScroll={() => hideArrow()}><P><ArrowDown></ArrowDown><ArrowDown></ArrowDown><ArrowDown></ArrowDown></P></ArrowBox>
+                    <ArrowBox><P><ArrowDown></ArrowDown><ArrowDown></ArrowDown><ArrowDown></ArrowDown></P></ArrowBox>
                 </Qoute>
             </TextBox>
         </Container>
@@ -172,7 +173,7 @@ const Qoute = styled.h1`
     } 
     @media only screen and (max-width: 600px) {
         font-size: .8rem;
-        line-height:1.2rem;
+        line-height:1.1rem;
     } 
 `
 
