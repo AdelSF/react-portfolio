@@ -7,6 +7,7 @@ import Gallery from './Components/gallery/Gallery'
 import Booking from './Components/booking/Booking'
 import About from './Components/about/About'
 import Header from './Components/shared/Header.jsx'
+import Footer from './Components/shared/Footer.jsx'
 
 
 
@@ -37,6 +38,7 @@ const Routes = () => {
               <Route path="/about"><About/></Route>
               <Route path="/"><Home /></Route>
             </Switch>
+            <Footer />
         </BrowserRouter>
     </>
   )

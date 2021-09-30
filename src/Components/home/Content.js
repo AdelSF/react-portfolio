@@ -50,10 +50,10 @@ export default function Content() {
                         </Box>
                     </Div4>
                 </Parallax>
-                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists, So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and that as inspiration to create art <Link to='/booking' >BOOKING</Link> section to schedule a time to start.</P>
-                <P>As the director of the team, sometimes I work with other team members, a videograher, makeup artist, photo editor and light assistant. learn more <Link to="/about">ABOUT US</Link>  </P>    
-                   {/* Learn more about the team in <A href="../about">ABOUT US</A>. */}
+                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts, I had the good fortune to grow up in a family surrounded by artists, So I started with painting and drawing but since I started film school at 2011 I truly fell in love with photography and that was the beginning of a new journey.</P>
+                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives, learn more about them and use it as an inspiration to create art.</P> 
+                <P>Depending on the project sometimes I work with other team members like videograher, makeup artist, photo editor and light assistant. learn more <Link to="/about">ABOUT US</Link>.</P>    
+                <P>If you like to be part of my art project, schedule a 30 minutes video-call at <Link to='/booking' >BOOKING</Link> and learn more about it.</P>
             </AboutSection>
         </Container>
     )
@@ -153,7 +153,7 @@ const H3 = styled.h1`
 const P = styled.p`
     display: block;
     font-size: 1rem;
-    margin: 5%;
+    margin: 4%;
 `
 
 const Box = styled.div`
