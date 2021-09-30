@@ -105,6 +105,7 @@ const Img = styled.img`
     /* background-position: 50% 70%; */
     position: absolute;
     width: 100%;
+    /* border: 1px solid black; */
 `
 
 const TextBox = styled.div`

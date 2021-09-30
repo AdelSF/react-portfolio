@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
 import img from '../../../assets/img/Other/background-design.png'
-import relaxImg from '../../../assets/img/Other/Kaeli-1.jpg'
+import relaxImg from '../../../assets/img/Other/listening-to-ocean.jpeg'
 import { Parallax } from "react-parallax";
 import me from '../../../assets/img/Other/meme.png'
 import cam1 from '../../../assets/img/Other/cam1.png';
@@ -171,6 +171,9 @@ const Image1 = styled.img`
     position: absolute;
     width: 80%;
     height: 100%;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
 `
 const Image2 = styled.img`
     background-position: 50% 50%;
@@ -179,5 +182,8 @@ const Image2 = styled.img`
     display: flex;
     width: 80%;
     height: 100%;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
 `
 
