@@ -13,7 +13,7 @@ export default function About(){
                     <H1>Director</H1>
                     <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with
                          painting and drawing but since I started film school at 2010 I truly fell in love with photography and that was the beginning of a new journey.
-                         my passion is to capture beauty and simplicity in people’s lives and that as inspiration to create a piece of art</P> 
+                         my passion is to capture beauty and simplicity in people’s lives and use that as inspiration to create art</P> 
                 </Div1>
                 <Img src={"https://icecube-us-303.icedrive.io/thumbnail?p=mxbPN8r2D0yQuC%2BLkr%2BBgz1cTZ8nngrkzL9J7XLlOhuDNghttX3Z9NVbOtE7H7dq0GmF8Hj9zOrdSgqHojK5zednNOK47f%2BBQ%2BGhLTYR%2FtBSvOWpFN%2BPt6xYs5qeSO5t&w=1280&h=1280&m=cropped"} alt="Team member" />
             </Div>

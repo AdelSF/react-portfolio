@@ -7,6 +7,8 @@ import { Parallax } from "react-parallax";
 import me from '../../../assets/img/Other/meme.png'
 import cam1 from '../../../assets/img/Other/cam1.png';
 import cam2 from '../../../assets/img/Other/cam2.png'
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -48,9 +50,9 @@ export default function Content() {
                         </Box>
                     </Div4>
                 </Parallax>
-                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and during all these years and work with different people I developed 3 simple steps from beginning to the end for each session, see the <A href="../booking">BOOKING</A> section to schedule a time to start.</P>
-                <P>As the director of the photography team, I work with other team members, a videograher, makeup artist, photo editor and light assistant. </P>    
+                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts I had the good fortune to grow up in a family surrounded by artists, So I started with painting and drawing but since I started film school about 10 years ago I truly fell in love with photography and that was the beginning of a new journey.</P>
+                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives and that as inspiration to create art <Link to='/booking' >BOOKING</Link> section to schedule a time to start.</P>
+                <P>As the director of the team, sometimes I work with other team members, a videograher, makeup artist, photo editor and light assistant. learn more <Link to="/about">ABOUT US</Link>  </P>    
                    {/* Learn more about the team in <A href="../about">ABOUT US</A>. */}
             </AboutSection>
         </Container>
