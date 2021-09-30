@@ -168,12 +168,12 @@ const Qoute = styled.h1`
     opacity: .8;
     text-align: center;
     @media only screen and (max-width: 900px) {
-        width: 150px;
-        font-size: .8rem;
+        width: 160px;
+        font-size: .7rem;
         line-height:1.2rem;
     } 
     @media only screen and (max-width: 600px) {
-        font-size: .8rem;
+        font-size: .7rem;
         line-height:1.1rem;
     } 
 `
