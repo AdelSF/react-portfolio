@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import img from '../../../assets/img/Other/background-design.png'
-import Mmbr from '../../../assets/img/Other/art-pic-1.jpg'
 
 
 
