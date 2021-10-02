@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -7,7 +7,8 @@ import img from '../../../assets/img/Other/background-design.png';
 // import Vector from '../../../assets/img/Other/vector-1.png'
 
 
-export default function Gallery(){
+export default function Galleries(){
+å
     return (
         <>
             <Container>
@@ -18,10 +19,9 @@ export default function Gallery(){
               <ImgGalleryBox>
                 {LinkJson.map((images, i) => {
                   return( <Div key={i}>
-                              {/* <H2>Session Number: {i+1}</H2> */}
                               <ImageGallery items={images} autoPlay={false} lazyLoad={true} slideDuration={1500} slideInterval={5000} thumbnailPosition={"left"} showBullets={true}/>
                           </Div>
-                )})}
+                )})} 
               </ImgGalleryBox>
             </Container>
         </>
@@ -29,11 +29,11 @@ export default function Gallery(){
 }
 
 const Container = styled.div`
-    justify-content: center;
-    border-radius: 5px;
-    background-image: url(${img});
-    background-size: contain;
-    background-color:  #e6e6ff;
+  justify-content: center;
+  border-radius: 5px;
+  background-image: url(${img});
+  background-size: contain;
+  background-color:  #e6e6ff;
 `
 const Div = styled.div`
   border: 2px solid lightblue;
@@ -69,3 +69,4 @@ const ImgGalleryBox = styled.div`
     padding: 0; 
   }
 `
+

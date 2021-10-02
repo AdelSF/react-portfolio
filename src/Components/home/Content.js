@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components'
-import ReactPlayer from 'react-player'
 import img from '../../../assets/img/Other/background-design.png'
 import relaxImg from '../../../assets/img/Other/listening-to-ocean.jpeg'
 import { Parallax } from "react-parallax";
+import Before from '../../../assets/img/Other/before.jpeg' // check for optimization later
+import After from '../../../assets/img/Other/after-min.jpeg'
 import me from '../../../assets/img/Other/meme.png'
 import cam1 from '../../../assets/img/Other/cam1.png';
 import cam2 from '../../../assets/img/Other/cam2.png'
 import { Link } from 'react-router-dom';
+import ReactCompareImage from 'react-compare-image';
+
 
 
 
@@ -40,6 +43,11 @@ export default function Content() {
                     <H3>Capture The Moment</H3>
                 </TextBoxOnparallax>
             </Parallax>
+            <Comparison>
+                <H1>There Is More Than Just A Photo...</H1>
+                <PNote>Drag the middle line to left and right.</PNote>
+                <ReactCompareImage leftImage={Before} rightImage={After} />
+            </Comparison>
             <AboutSection>
                 <H2>About The Artist</H2>
                   <Parallax bgImage={ me }>
@@ -50,9 +58,9 @@ export default function Content() {
                         </Box>
                     </Div4>
                 </Parallax>
-                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts, I had the good fortune to grow up in a family surrounded by artists, So I started with painting and drawing but since I started film school at 2011 I truly fell in love with photography and that was the beginning of a new journey.</P>
-                <P>Since my beginning in photography, my passion was to capture beauty and simplicity in people’s lives, learn more about them and use it as an inspiration to create art.</P> 
-                <P>Depending on the project sometimes I work with other team members like videograher, makeup artist, photo editor and light assistant. learn more <Link to="/about">ABOUT US</Link>.</P>    
+                <P>My name is Adel Paakraad. I have always considered myself a lifelong student of the arts. I had the good fortune growing up in a family surrounded by artists; that's why I started painting and drawing at a young age. But since I started film school in 2011, I truly fell in love with photography, which was the beginning of a new journey.</P>
+                <P>Since beginning photography, my passion has been to capture the beauty and the simplicity in people's lives. As I learn more about them, I use their stories as an inspiration to create art.</P> 
+                <P>Depending on the project, sometimes I work with other team members like videographers, makeup artists, photo editors, and light assistants. Learn more <Link to="/about">ABOUT US</Link>.</P>    
                 <P>If you like to be part of my art project, schedule a 30 minutes video-call at <Link to='/booking' >BOOKING</Link> and learn more about it.</P>
             </AboutSection>
         </Container>
@@ -97,6 +105,13 @@ const H1 = styled.h1`
     width: 100%;
     @media only screen and (max-width: 800px) {
         font-size: 1.5rem;
+    }
+`
+const PNote = styled.p`
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 800px) {
+        font-size: .9rem;
     }
 `
 
@@ -188,4 +203,10 @@ const Image2 = styled.img`
         width: 100%;
     }
 `
-
+const Comparison = styled.div`
+    margin: 2% 10%;
+    padding: 0 10%;
+    @media only screen and (max-width: 800px) {
+        margin: 2%;
+    }
+`
