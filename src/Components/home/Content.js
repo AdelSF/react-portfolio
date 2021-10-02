@@ -208,5 +208,6 @@ const Comparison = styled.div`
     padding: 0 10%;
     @media only screen and (max-width: 800px) {
         margin: 2%;
+        padding: 0;
     }
 `
