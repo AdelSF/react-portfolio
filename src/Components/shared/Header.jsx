@@ -27,7 +27,7 @@ export default function Header() {
                     <Items displayStatus={hamContent} >
                         <Item onClick={hamOnClick} to='/' >HOME</Item>
                         {/* <Item to='/shop' >SHOP</Item> */}
-                        <Item onClick={hamOnClick} to='/gallery' >GALLERY</Item>
+                        <Item onClick={hamOnClick} to='/galleries' >GALLERY</Item>
                         <Item onClick={hamOnClick} to='/booking' >BOOKING</Item>
                         <Item onClick={hamOnClick} to='/about' >ABOUT</Item>
                     </Items>

@@ -8,7 +8,6 @@ import img from '../../../assets/img/Other/background-design.png';
 
 
 export default function Galleries(){
-å
     return (
         <>
             <Container>

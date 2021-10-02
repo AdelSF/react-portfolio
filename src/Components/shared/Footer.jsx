@@ -16,7 +16,7 @@ export default function Header() {
                     <Items >
                         <Item to='/' >HOME</Item>
                         {/* <Item to='/shop' >SHOP</Item> */}
-                        <Item to='/gallery' >GALLERY</Item>
+                        <Item to='/galleries' >GALLERY</Item>
                         <Item to='/booking' >BOOKING</Item>
                         <Item to='/about' >ABOUT</Item>
                     </Items>
