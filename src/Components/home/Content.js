@@ -44,7 +44,7 @@ export default function Content() {
                 </TextBoxOnparallax>
             </Parallax>
             <Comparison>
-                <H1>There Is More Than Just A Photo...</H1>
+                <ComparingQoute>There Is More Than Just A Photo...</ComparingQoute>
                 <PNote>Drag the middle line to left and right.</PNote>
                 <ReactCompareImage leftImage={Before} rightImage={After} />
             </Comparison>
@@ -107,11 +107,21 @@ const H1 = styled.h1`
         font-size: 1.5rem;
     }
 `
+const ComparingQoute = styled.h1`
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    width: 100%;
+    font-Size: 1.8rem;
+    @media only screen and (max-width: 800px) {
+        font-size: 1.2rem;
+    }
+`
 const PNote = styled.p`
     display: flex;
     justify-content: center;
     @media only screen and (max-width: 800px) {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 `
 
@@ -206,8 +216,12 @@ const Image2 = styled.img`
 const Comparison = styled.div`
     margin: 2% 10%;
     padding: 0 10%;
+    @media only screen and (max-width: 1000px) {
+        margin: 2% 5%;
+        padding: 0 5%;
+    }
     @media only screen and (max-width: 800px) {
         margin: 2%;
-        padding: 0;
+        padding: 4% 0;
     }
 `
