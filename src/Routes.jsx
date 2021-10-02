@@ -33,7 +33,7 @@ const Routes = () => {
             <Header />
             <Switch>
               <Route path="/shop"><Shop /></Route>
-              <Route path="/gallery"><Galleries /></Route>
+              <Route path="/galleries"><Galleries /></Route>
               <Route path="/booking"><Booking /></Route>
               <Route path="/about"><About/></Route>
               <Route path="/"><Home /></Route>
