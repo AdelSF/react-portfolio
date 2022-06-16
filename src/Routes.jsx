@@ -6,7 +6,7 @@ import Shop from './Components/shop/Shop'
 import Galleries from './Components/gallery/Galleries'
 import Booking from './Components/booking/Booking'
 import About from './Components/about/About'
-import Model from './Components/gallery/model'
+// import Model from './Components/gallery/model'
 import Header from './Components/shared/Header.jsx'
 import Footer from './Components/shared/Footer.jsx'
 
@@ -37,7 +37,7 @@ const Routes = () => {
               <Route path="/galleries"><Galleries /></Route>
               <Route path="/booking"><Booking /></Route>
               <Route path="/about"><About/></Route>
-              <Route path="/model"><Model/></Route>
+              {/* <Route path="/model"><Model/></Route> */}
               <Route path="/"><Home /></Route>
             </Switch>
             <Footer />

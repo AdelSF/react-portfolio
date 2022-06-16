@@ -1,32 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ImageGallery from 'react-image-gallery';
-import TopImgs from './TopImgs';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import LinkJson from '../../../assets/json/imgLinks.json';
 import allRandomLinks from '../../../assets/json/allRandomLinks.json';
 import img from '../../../assets/img/Other/background-design.png';
-// import Vector from '../../../assets/img/Other/vector-1.png'
 import { Link } from 'react-router-dom';
-import ModelAlbum from './ModelAlbum.js';
 
 
 export default function Galleries(){
 
   const [currModelId, setCurrModelId] = useState(Number);
 
-  const childToParent = (childdata) => {
-    setCurrModelId(childdata);
-  }
-  console.log("curr model id", currModelId)
+  
 
     return (
-        <>
-           <TopImgs data={modelData} childToParent={childToParent}/>
-           <ModelAlbum modelId={currModelId} data={modelData}/>
+        <>  
+            <H1>Pagination in progress</H1>
         </>
     );
 }
+
+const H1 = styled.h1`
+  color: white;
+  display: flex;
+  justify-content: center;
+`
 
 
 const modelData = [
