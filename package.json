@@ -22,7 +22,6 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0-rc.4",
-    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.2.0",
@@ -42,6 +41,8 @@
     "webpack-dev-server": "^4.1.0"
   },
   "dependencies": {
+    "babel-loader": "^8.2.5",
+    "firebase": "^9.8.4",
     "react": "^17.0.2",
     "react-calendly": "^2.2.1",
     "react-compare-image": "^3.1.0",
@@ -54,6 +55,7 @@
     "react-router-dom": "^5.2.1",
     "redux": "^4.1.1",
     "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.9",
     "rellax": "^1.12.1"
   }
 }

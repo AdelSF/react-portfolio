@@ -30,6 +30,7 @@ export default function Header() {
                         <Item onClick={hamOnClick} to='/galleries' >GALLERY</Item>
                         <Item onClick={hamOnClick} to='/booking' >BOOKING</Item>
                         <Item onClick={hamOnClick} to='/about' >ABOUT</Item>
+                        <Item onClick={hamOnClick} to='/auth' >SIGN-IN</Item>
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
