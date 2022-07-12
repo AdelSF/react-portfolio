@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import logo from "../../../assets/img/Other/transparent-white-logo.png"
 import { useLocation } from "react-router-dom"
-
+import { UserContext } from '../context/UserContext';
+import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 var menuColor;
+
 export default function Header() {
+    const { currentUser } = useContext(UserContext);
+    
     let location = useLocation();
     const [hamContent, setHamContent] = useState('☰')
 
@@ -17,6 +21,8 @@ export default function Header() {
             setHamContent('☰')
         }
     }
+
+
 
     menuColor = path => location.pathname === path ? 'white' : '#5bb3f7'
 
@@ -30,7 +36,11 @@ export default function Header() {
                         <Item onClick={hamOnClick} to='/galleries' >GALLERY</Item>
                         <Item onClick={hamOnClick} to='/booking' >BOOKING</Item>
                         <Item onClick={hamOnClick} to='/about' >ABOUT</Item>
-                        <Item onClick={hamOnClick} to='/auth' >SIGN-IN</Item>
+                        <Item  to='/auth' >
+                            {currentUser ? 
+                            (<span onClick={signOutUser}>SIGN OUT</span>)
+                            : (<span>SIGN IN</span>) }</Item>
+                        {/* // the style needs to be changed for sign in and sign out */}
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
