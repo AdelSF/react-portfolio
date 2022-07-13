@@ -34,7 +34,7 @@ const Routes = () => {
         <BrowserRouter>
             <Header />
             <Switch>
-              {/* <Route path="/shop"><Shop /></Route> */}
+              <Route path="/shop"><Shop /></Route>
               <Route path="/galleries"><Galleries /></Route>
               <Route path="/booking"><Booking /></Route>
               <Route path="/about"><About/></Route>
@@ -42,7 +42,7 @@ const Routes = () => {
               {/* <Route path="/model"><Model/></Route> */}
               <Route path="/"><Home /></Route>
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </BrowserRouter>
     </>
   )

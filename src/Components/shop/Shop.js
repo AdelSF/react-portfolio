@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
+import { useState, useContext } from 'react';
 import styled from 'styled-components';
-
+// import SHOP_DATA from '../../../assets/json/shop-data.json'
+import { ProductsContext } from '../context/productContext';
+import ProductCard from './ProductCard';
 
 
 
 
 export default function Shop(){
+    const {products} = useContext(ProductsContext);
     return (
         <Container>
-            <H2>No Product Available Now</H2>
+            {products.map((product) => (
+                <ProductCard key={product.id} product={product} />
+            ))}
+            
         </Container>
     )
 }
 
 const Container = styled.div`
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-`
-const H2 = styled.h2`
-   color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    background-color: white;
+    padding: 1rem; // needs to change later
 `
