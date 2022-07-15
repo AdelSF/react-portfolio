@@ -8,7 +8,9 @@ export default function CartItem({ cartItem} ) {
             <h4>{name}</h4>
             <Img src={imageUrl} alt={`${name}`} />
             {/* <span>{quantity}</span> */}
-            <span>{quantity} x ${price}</span>
+            <span>Qty:{quantity}</span>
+            <span>Price: ${price}</span>
+            <button>Remove</button>
         </div>
     )
 }

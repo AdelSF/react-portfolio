@@ -1,12 +1,13 @@
 import React from "react"
 import { createGlobalStyle } from 'styled-components'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useRoutes } from 'react-router-dom'
 import Home from './Components/home/Home'
 import Shop from './Components/shop/Shop'
 import Galleries from './Components/gallery/Galleries'
 import Booking from './Components/booking/Booking'
 import About from './Components/about/About'
 import AuthPage from './Components/auth/AuthPage'
+import Checkout from "./Components/shop/Checkout"
 // import Model from './Components/gallery/model'
 import Header from './Components/shared/Header.jsx'
 import Footer from './Components/shared/Footer.jsx'
@@ -26,26 +27,29 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const AllRoutes = () => { 
+  const routes = useRoutes([
+    { path:"/shop", element:<Shop /> },
+    { path:"/galleries", element:<Galleries /> },
+    { path:"/booking", element:<Booking /> },
+    { path:"/about", element:<About /> },
+    { path:"/checkout", element:<Checkout /> },
+    { path:"/auth", element:<AuthPage />},
+    { path:"/", element:<Home />}
+  ])
+  return routes
 
-const Routes = () => {
+}
+
+const AppWrapper = () => {
   return (
-    <>
-        <GlobalStyle />
-        <BrowserRouter>
-            <Header />
-            <Switch>
-              <Route path="/shop"><Shop /></Route>
-              <Route path="/galleries"><Galleries /></Route>
-              <Route path="/booking"><Booking /></Route>
-              <Route path="/about"><About/></Route>
-              <Route path="/auth"><AuthPage /></Route>
-              {/* <Route path="/model"><Model/></Route> */}
-              <Route path="/"><Home /></Route>
-            </Switch>
-            {/* <Footer /> */}
-        </BrowserRouter>
-    </>
+    <Router>
+      <GlobalStyle />
+      <Header />
+      <AllRoutes />
+      {/* <Footer /> */}
+    </Router>
   )
 }
 
-export default Routes
+export default AppWrapper

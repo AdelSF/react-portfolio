@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import Routes from './Routes.jsx';
+import AppWrapper from './Routes.jsx';
 import store from './Redux/store';
 import UserProvider from "./Components/context/UserContext.js";
 import { ProductsProvider } from "./Components/context/productContext.js";
@@ -15,7 +15,7 @@ ReactDOM.render(
                 <UserProvider>
                     <ProductsProvider>
                         <CartProvider>
-                            <Routes />
+                            <AppWrapper />
                         </CartProvider>
                     </ProductsProvider>
                 </UserProvider>
