@@ -17,6 +17,7 @@ export default function Galleries(){
     return (
         <>  
             <H1>Pagination in progress</H1>
+            {/* <img url={https://kuula.co/share/collection/7l4fZ?logo=1&info=1&fs=1&vr=0&autorotate=0.18&thumbs=1} /> */}
         </>
     );
 }

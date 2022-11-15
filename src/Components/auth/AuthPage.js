@@ -11,7 +11,6 @@ export default function AuthPage(){
 
       return (
           <>  
-              <H1>This is Auth page</H1>
               <SignUpForm />
               <SignInForm />
           </>

@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import AppWrapper from './Routes.jsx';
 import store from './Redux/store';
 import UserProvider from "./Components/context/UserContext.js";
-import { ProductsProvider } from "./Components/context/productContext.js";
+import { CategoriesProvider } from "./Components/context/CategoriesContext.js";
 import { CartProvider } from "./Components/context/CartContext";
 
 
@@ -13,11 +13,11 @@ ReactDOM.render(
         <React.StrictMode>
             <Provider store={store}>
                 <UserProvider>
-                    <ProductsProvider>
+                    <CategoriesProvider>
                         <CartProvider>
                             <AppWrapper />
                         </CartProvider>
-                    </ProductsProvider>
+                    </CategoriesProvider>
                 </UserProvider>
             </Provider>
         </React.StrictMode>,

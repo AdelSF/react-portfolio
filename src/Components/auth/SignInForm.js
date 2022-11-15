@@ -74,6 +74,8 @@ export default function SignInForm(){
 
   const H1 = styled.h1`
     color: white;
+    display: flex;
+    justify-content: center;
   `
   const Form = styled.form`
     /* display: flex; */

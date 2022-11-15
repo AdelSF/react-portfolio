@@ -51,7 +51,7 @@ export default function SignUpForm(){
 
       return (
           <>  
-              <H1>This is sign Up Form in page</H1>
+              <H1>Sign Up Here</H1>
               <Form onSubmit={handleSubmit}>
                   <Label>Display Name:</Label>
                   <Input type="text" required onChange={handleChange} name='displayName' value={displayName}/>
@@ -72,6 +72,8 @@ export default function SignUpForm(){
 
   const H1 = styled.h1`
     color: white;
+    display: flex;
+    justify-content: center;
   `
   const Form = styled.form`
     /* display: flex; */

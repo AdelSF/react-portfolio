@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-export default function CartItem({ cartItem} ) {
+export default function CartItem({ cartItem }) {
     const { name, quantity, imageUrl, price } = cartItem;
 
     return (
         <div>
             <h4>{name}</h4>
             <Img src={imageUrl} alt={`${name}`} />
-            {/* <span>{quantity}</span> */}
             <span>Qty:{quantity}</span>
             <span>Price: ${price}</span>
             <button>Remove</button>
@@ -45,4 +44,4 @@ const Img = styled.img`
 //       }
 //     }
 //   }
-  
+
