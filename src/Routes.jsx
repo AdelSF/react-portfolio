@@ -1,6 +1,6 @@
 import React from "react"
 import { createGlobalStyle } from 'styled-components'
-import { BrowserRouter as Router, Routes, Route, useRoutes } from 'react-router-dom'
+import { BrowserRouter as Router, useRoutes } from 'react-router-dom'
 import Home from './Components/home/Home'
 import Shop from './Components/shop/Shop'
 import Galleries from './Components/gallery/Galleries'
@@ -29,9 +29,9 @@ const GlobalStyle = createGlobalStyle`
 
 const AllRoutes = () => { 
   const routes = useRoutes([
-    { path:"/shop", element:<Shop /> },
     { path:"/galleries", element:<Galleries /> },
     { path:"/booking", element:<Booking /> },
+    { path:"/shop/*", element:<Shop /> },
     { path:"/about", element:<About /> },
     { path:"/checkout", element:<Checkout /> },
     { path:"/auth", element:<AuthPage />},
