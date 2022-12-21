@@ -68,7 +68,7 @@ export default function Content() {
 }
 
 const Container = styled.div`
-    background-image: url(${img});
+    /* background-image: url(${img}); */
     background-size: contain;
     background-color:  #e6eeff;
     position: relative;
