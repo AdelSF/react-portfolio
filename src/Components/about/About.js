@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import img from '../../../assets/img/Other/background-design.png'
+// import img from '../../../assets/img/Other/background-design.png'
 
 
 
@@ -37,12 +37,12 @@ export default function About(){
 }
 
 const Container = styled.div`
-    background-image: url(${img});
-    background-size: cover;
-    width: 100%;
+    /* background-image: url(${img}); */
+    /* background-size: cover; */
+    /* width: 100%; */
     /* position: absolute; */
-    background-color: #ffffe6;
-    padding-top: 8%;
+    /* background-color: #ffffe6; */
+    /* padding-top: 8%; */
 `
 
 const H1 = styled.h2`

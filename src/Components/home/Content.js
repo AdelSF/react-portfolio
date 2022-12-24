@@ -69,13 +69,13 @@ export default function Content() {
 
 const Container = styled.div`
     /* background-image: url(${img}); */
-    background-size: contain;
+    /* background-size: contain;
     background-color:  #e6eeff;
     position: relative;
     z-index: 2;
     @media only screen and (max-width: 600px) {
         position: absolute;
-    }
+    } */
 `
 
 const VideoBox = styled.div`

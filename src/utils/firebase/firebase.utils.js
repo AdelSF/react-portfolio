@@ -1,6 +1,11 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import 'regenerator-runtime/runtime'
+import 'regenerator-runtime/runtime';
+import firebase from 'firebase/compat/app';
+// import { initializeApp } from 'firebase/app';
+
+import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
 
 import {
     getAuth,
@@ -117,3 +122,16 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
 export const signOutUser = async () => await signOut(auth);
 
 export const onAuthStateChangedListener = (callBack) => onAuthStateChanged(auth, callBack)
+
+
+firebase.initializeApp(firebaseConfig);
+
+
+
+
+
+const projectStorage = firebase.storage();
+const projectFirestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+
+export { projectStorage, projectFirestore, timestamp };
