@@ -13,7 +13,7 @@ export default function Galleria() {
     <>
         <UploadForm />
         <Div>
-            <H2>Garden Gallery</H2>
+            <H2>Photo Gallery</H2>
         </Div>
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
