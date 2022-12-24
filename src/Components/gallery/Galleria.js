@@ -10,8 +10,8 @@ export default function Galleria() {
   const [selectedImg, setSelectedImg] = useState(null);
 
   return (
-    <>
-        <UploadForm />
+    <Container>
+        {/* <UploadForm /> */}
         <Div>
             <H2>Photo Gallery</H2>
         </Div>
@@ -19,17 +19,23 @@ export default function Galleria() {
         { selectedImg && (
             <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
         )}
-    </>
+    </Container>
   );
 }
 
+
+const Container = styled.div`
+    /* display: flex; */
+    /* justify-content: space-around; */
+`
 
 const Div = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 `
 
 const Img = styled.img`
