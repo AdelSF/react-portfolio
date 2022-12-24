@@ -36,17 +36,17 @@ export default function Header() {
                 <Logo src={logo} alt="logo" />
                     <Items displayStatus={hamContent} >
                         <Item onClick={hamOnClick} to='/' >HOME</Item>
-                        <Item to='/shop' >SHOP</Item>
+                        {/* <Item to='/shop' >SHOP</Item> */}
                         <Item onClick={hamOnClick} to='/galleries' >GALLERY</Item>
                         <Item onClick={hamOnClick} to='/booking' >BOOKING</Item>
                         <Item onClick={hamOnClick} to='/about' >ABOUT</Item>
-                        <Item to='/auth' >
+                        {/* <Item to='/auth' >
                             {currentUser ? 
                             (<span onClick={signOutUser}>SIGN OUT</span>)
-                            : (<span>SIGN IN</span>) }</Item>
+                            : (<span>SIGN IN</span>) }</Item> */}
                         {/* // the style needs to be changed for sign in and sign out */}
-                        <CartIcon />
-                        {isCartOpen && <CartDropDown />}
+                        {/* <CartIcon />
+                        {isCartOpen && <CartDropDown />} */}
                     </Items>
                 <Ham onClick={hamOnClick}>{hamContent}</Ham>
             </Menu>
