@@ -1,1 +1,6 @@
-/* /index.html 200
+bobsite/about  /about 301
+/about /bobsite/about.html 200
+/bobsite/portfolio  /portfolio 301
+/portfolio /bobsite/portfolio.html 200
+/bobsite/contact  /contact 301
+/contact /bobsite/contact.html 200
