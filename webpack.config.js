@@ -36,7 +36,6 @@ module.exports = {
   output: {
     // output path is required for `clean-webpack-plugin`
     path: path.resolve(__dirname, "dist"),
-    publicPath: '/',
     // this places all images processed in an image folder
     assetModuleFilename: "images/[hash][ext][query]",
   },
