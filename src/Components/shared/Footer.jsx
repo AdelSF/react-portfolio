@@ -21,7 +21,7 @@ export default function Header() {
                         <Item to='/about' >ABOUT</Item>
                     </Items>
             </Menu>
-            <P>All right resereved 2021</P>
+            <P>All right resereved 2023</P>
         </>
     )
 }

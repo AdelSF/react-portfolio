@@ -12,9 +12,9 @@ export default function Galleria() {
   return (
     <Container>
         {/* <UploadForm /> */}
-        <Div>
+        {/* <Div>
             <H2>Photo Gallery</H2>
-        </Div>
+        </Div> */}
         <ImageGrid setSelectedImg={setSelectedImg} />
         { selectedImg && (
             <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />

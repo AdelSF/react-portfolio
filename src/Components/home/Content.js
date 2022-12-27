@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import img from '../../../assets/img/Other/background-design.png'
 import relaxImg from '../../../assets/img/Other/listening-to-ocean.jpeg'
 import { Parallax } from "react-parallax";
-import Before from '../../../assets/img/Other/before.jpeg' // check for optimization later
-import After from '../../../assets/img/Other/after-min.jpeg'
+import Before from '../../../assets/img/Other/Autmn-1-min.jpg' // check for optimization later
+import After from '../../../assets/img/Other/Autmn-2-min.jpg'
 import me from '../../../assets/img/Other/meme.png'
 import cam1 from '../../../assets/img/Other/cam1.png';
 import cam2 from '../../../assets/img/Other/cam2.png'
