@@ -4,8 +4,8 @@ import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import Galleria from './Galleria';
 import ReactCompareImage from 'react-compare-image';
-import Before from '../../../assets/img/Other/Autmn-3-min.jpg';
-import After from '../../../assets/img/Other/Autmn-4-min.jpg';
+import Before from '../../../assets/img/Other/Bahramji-1.jpg';
+import After from '../../../assets/img/Other/Bahramji-2.jpg';
 
 
 
@@ -14,11 +14,13 @@ export default function Galleries(){
 
     return (
         <Div>  
-            <Comparison>
+            {/* <Comparison>
                 <ComparingQoute>Its More Than Just A Photo...</ComparingQoute>
                 <PNote>Drag the middle line to left and right.</PNote>
                 <ReactCompareImage leftImage={Before} rightImage={After} />
-            </Comparison>
+            </Comparison> */}
+            <Img src={Before} alt="musician"  />
+
             <Galleria />
         </Div>
     );
@@ -26,6 +28,7 @@ export default function Galleries(){
 
 const Div = styled.div`
   text-align: center;
+  background-color: black;
 `
 const ComparingQoute = styled.h1`
     display: flex;
@@ -59,4 +62,18 @@ const Comparison = styled.div`
         margin: 2%;
         padding: 4% 0;
     }
+`
+
+const Img = styled.img`
+    width: 80%;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        
+    }
+    /* height: 800px; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* z-index: -1; */
+
+    /* top: 0; */
 `
