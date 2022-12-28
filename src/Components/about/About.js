@@ -37,12 +37,11 @@ export default function About(){
 }
 
 const Container = styled.div`
-    /* background-image: url(${img}); */
-    /* background-size: cover; */
-    /* width: 100%; */
-    /* position: absolute; */
-    /* background-color: #ffffe6; */
-    /* padding-top: 8%; */
+    width: 60%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1100px) {
+        width: 90%;
+    }
 `
 
 const H1 = styled.h2`
@@ -51,7 +50,7 @@ const H1 = styled.h2`
     margin: 5%;
 `
 const Div1 = styled.div`
-
+    background-color: lightgray;
 `
 const Div = styled.div`
     display: flex;
@@ -60,8 +59,11 @@ const Div = styled.div`
     border-radius: 10px;
     margin: 2% 5%;
     /* padding: 5%; */
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 700px) {
         flex-wrap: wrap;
+        margin: 2% 5%;
+        /* margin: 0; */
+        padding: 0;
     }
 `
 
@@ -72,9 +74,9 @@ const Img = styled.img`
     /* background-position: 50% 70%; */
     border: 2px solid white;
     border-radius: 10px;
-    width: 300px;
+    width: 200px;
     margin: 2%;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 700px) {
         margin: 5% 2%;
     }
 `
