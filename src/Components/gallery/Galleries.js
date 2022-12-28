@@ -14,13 +14,11 @@ export default function Galleries(){
 
     return (
         <Div>  
-            {/* <Comparison>
-                <ComparingQoute>Its More Than Just A Photo...</ComparingQoute>
-                <PNote>Drag the middle line to left and right.</PNote>
-                <ReactCompareImage leftImage={Before} rightImage={After} />
-            </Comparison> */}
-            <Img src={Before} alt="musician"  />
-
+            <Div2>
+                {/* <H1Left>IMAGE</H1Left> */}
+                <Img src={Before} alt="musician"  />
+                {/* <H1Right>GALLERY</H1Right> */}
+            </Div2>
             <Galleria />
         </Div>
     );
@@ -49,9 +47,6 @@ const PNote = styled.p`
 `
 
 const Comparison = styled.div`
-/* height: 80vh; */
-/* position: fixed; */
-/* display: absolute; */
     margin: 2% 10%;
     padding: 0 10%;
     @media only screen and (max-width: 1000px) {
@@ -67,13 +62,37 @@ const Comparison = styled.div`
 const Img = styled.img`
     width: 80%;
     @media only screen and (max-width: 800px) {
-        width: 100%;
-        
+        width: 100%;   
     }
-    /* height: 800px; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* z-index: -1; */
+`
 
-    /* top: 0; */
+const H1Left = styled.h1`
+    /* color: white; */
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    font-size: 5rem;
+    /* line-height: 10%; */
+    line-height: 34px;
+    height: 35px;
+    letter-spacing: 25px;
+    `
+const H1Right = styled.h1`
+    /* color: white; */
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -200px;
+    top: 40%;
+    font-size: 5rem;
+    line-height: 34px;
+    height: 35px;
+    letter-spacing: 25px;
+`
+
+const Div2 = styled.div`
+    width: 100%;
+    position: relative;
 `
