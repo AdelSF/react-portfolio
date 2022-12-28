@@ -43,7 +43,6 @@
   "dependencies": {
     "babel-loader": "^8.2.5",
     "firebase": "^9.8.4",
-    "framer-motion": "^8.0.2",
     "react": "^17.0.2",
     "react-calendly": "^2.2.1",
     "react-compare-image": "^3.1.0",
