@@ -11,8 +11,13 @@ import Checkout from "./Components/shop/Checkout"
 // import Model from './Components/gallery/model'
 import Header from './Components/shared/Header.jsx'
 import Footer from './Components/shared/Footer.jsx'
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client"
 
 
+const client = new ApolloClient({
+  uri: 'http://localhost:1337/api/members',
+  cache: new InMemoryCache()
+})
 
 
 const GlobalStyle = createGlobalStyle`
@@ -40,10 +45,12 @@ const AllRoutes = () => {
 const AppWrapper = () => {
   return (
     <Router>
-      <GlobalStyle />
-      <Header />
-      <AllRoutes />
-      {/* <Footer /> */}
+      <ApolloProvider client={client}>
+        <GlobalStyle />
+        <Header />
+        <AllRoutes />
+        {/* <Footer /> */}
+      </ApolloProvider>
     </Router>
   )
 }
