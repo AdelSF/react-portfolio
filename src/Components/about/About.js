@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { useQuery, gql } from '@apollo/client'
-import { useParams, Link } from 'react-router-dom'
+import { useQuery, gql } from '@apollo/client';
+import { useParams, Link } from 'react-router-dom';
 import useFetch from '../../utils/hooks/useFetch';
-
+import i18n from "i18next";
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 
 const MEMBERS = gql`
@@ -16,24 +17,85 @@ const MEMBERS = gql`
   }
 `
 
+const translationEn = {
+    "welcome": "Welcome!!",
+    "hello world": "Translation eng",
+};
+const translationFr = {
+    "welcome": "Bienvenue!",
+    "hello world": "france translation"
+};
+
+i18n
+    .use(initReactI18next)
+    .init({
+        resources: {
+            en: {translation: translationEn},
+            fr: {translation: translationFr}
+        },
+        lng: "en",
+        falBackLng: "en",
+        interpolation: { escapeValue: false}
+    })
+
 
 
 export default function About(){
+    // const { t } = useTranslation();
+    // let [changeLng, setChangeLng] = useState("members");
 
-    const { loading, error, data } = useFetch('http://localhost:1337/api/members')
+    // const { loading, error, data } = useFetch('http://localhost:1337/api/'+`${changeLng}`)
 
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error :(</p>
-  
-    console.log(data)
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error :(</p>
-  
-    console.log("Data1",data)
+    // if (loading) return <p>Loading...</p>
+    // if (error) return <p>Error :(</p>
+    
+    // console.log("Data1",data)
+
+    // function onChangeLocal(event) {
+    //     i18n.changeLanguage(event.target.value)
+    // }
+
+    // function onChangeApi(event) {
+    //     event.preventDefault();
+    //     let newLan = event.target.value;
+    //     mySubmit(newLan)
+    // }
+    // function mySubmit(newLan){
+    //     setChangeLng(newLan)
+    // }
 
   
     return (
         <Container>
+            {/* <LanguageBox>
+                <div>
+                    <h2>{t(`welcome`)}</h2>
+                    <h2>{t(`hello world`)}</h2>
+                    <p>change localy</p>
+                    <select name="language" onChange={onChangeLocal}>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>Change with API</h2>
+                    <div name="languageApi" onChange={onChangeApi}>
+                        <LanOption onClick={() => setChangeLng("members")}>English O</LanOption>
+                        <LanOption onClick={() => setChangeLng("member-es")}>R Norwegian</LanOption>
+                    </div>
+                </div>
+            </LanguageBox> */}
+
+            {/* {data.data.map(artist => (
+                <Div key={artist.id}>
+                    <Div1>
+                        <H1>{artist.attributes.title}</H1>
+                        <P>{artist.attributes.paragraph}</P> 
+                    </Div1>
+                    <Img src={artist.attributes.imgUrl} alt="Team member" />
+                </Div>
+            ))} */}
+
             <Div>
                 <Div1>
                     <H1>Director</H1>
@@ -42,7 +104,7 @@ export default function About(){
                 </Div1>
                 <Img src={"https://icecube-us-303.icedrive.io/thumbnail?p=mxbPN8r2D0yQuC%2BLkr%2BBgz1cTZ8nngrkzL9J7XLlOhuDNghttX3Z9NVbOtE7H7dq0GmF8Hj9zOrdSgqHojK5zednNOK47f%2BBQ%2BGhLTYR%2FtBSvOWpFN%2BPt6xYs5qeSO5t&w=1280&h=1280&m=cropped"} alt="Team member" />
             </Div>
-            
+
             <Div>
                 <Div1>
                     <H1>Technical Advisor</H1>
@@ -58,16 +120,6 @@ export default function About(){
                 </Div1>
                 <Img src={"https://icecube-us-303.icedrive.io/thumbnail?p=PpHEPu41jPPsfVcMsSe3HGfjpXVjbPPTlF%2FKEwpi0IGITPjCidxJ4dm6pOthF%2B3JCSXufgparUas3vuuYpYDryHsQ2EKYk06uRlIlUWvY%2B%2BM3r%2F7AL91cMOnkp4LeoX9&w=1280&h=1280&m=cropped"} alt="Team member" />
             </Div>
-
-            {/* {data.data.map(artist => (
-                <Div key={artist.id}>
-                    <Div1>
-                        <H1>{artist.attributes.title}</H1>
-                        <P>{artist.attributes.paragraph}</P> 
-                    </Div1>
-                    <Img src={artist.attributes.imgUrl} alt="Team member" />
-                </Div>
-            ))} */}
         </Container>
     )
 }
@@ -88,6 +140,11 @@ const H1 = styled.h2`
 const Div1 = styled.div`
     background-color: lightgray;
 `
+
+const LanguageBox = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
 const Div = styled.div`
     display: flex;
     justify-content: center;
@@ -103,6 +160,10 @@ const Div = styled.div`
     }
 `
 
+const LanOption = styled.a`
+    cursor: pointer;
+`
+
 const P = styled.p`
     margin: 5%;
 `
@@ -116,4 +177,6 @@ const Img = styled.img`
         margin: 5% 2%;
     }
 `
+
+
 
