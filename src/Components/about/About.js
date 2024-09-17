@@ -41,33 +41,33 @@ i18n
 
 
 export default function About(){
-    // const { t } = useTranslation();
-    // let [changeLng, setChangeLng] = useState("members");
+    const { t } = useTranslation();
+    let [changeLng, setChangeLng] = useState("members");
 
-    // const { loading, error, data } = useFetch('http://localhost:1337/api/'+`${changeLng}`)
+    const { loading, error, data } = useFetch('http://localhost:1337/api/'+`${changeLng}`)
 
     // if (loading) return <p>Loading...</p>
     // if (error) return <p>Error :(</p>
     
-    // console.log("Data1",data)
+    console.log("Data1",data)
 
-    // function onChangeLocal(event) {
-    //     i18n.changeLanguage(event.target.value)
-    // }
+    function onChangeLocal(event) {
+        i18n.changeLanguage(event.target.value)
+    }
 
-    // function onChangeApi(event) {
-    //     event.preventDefault();
-    //     let newLan = event.target.value;
-    //     mySubmit(newLan)
-    // }
-    // function mySubmit(newLan){
-    //     setChangeLng(newLan)
-    // }
+    function onChangeApi(event) {
+        event.preventDefault();
+        let newLan = event.target.value;
+        mySubmit(newLan)
+    }
+    function mySubmit(newLan){
+        setChangeLng(newLan)
+    }
 
   
     return (
         <Container>
-            {/* <LanguageBox>
+            <LanguageBox>
                 <div>
                     <h2>{t(`welcome`)}</h2>
                     <h2>{t(`hello world`)}</h2>
@@ -84,7 +84,7 @@ export default function About(){
                         <LanOption onClick={() => setChangeLng("member-es")}>R Norwegian</LanOption>
                     </div>
                 </div>
-            </LanguageBox> */}
+            </LanguageBox>
 
             {/* {data.data.map(artist => (
                 <Div key={artist.id}>
